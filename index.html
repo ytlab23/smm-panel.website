@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SMM Panel.Website — Independent SMM Panel Resource</title>
+<meta name="description" content="A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a0a0a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M3 3v18h18'/><path d='m19 9-5 5-4-4-3 3'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +70,7 @@
     color: var(--black);
   }
   .nav-logo {
-    font-family: var(--body); /* Clean font as requested */
+    font-family: var(--body);
     font-size: 1.3rem;
     font-weight: 800;
     letter-spacing: -0.02em;
@@ -311,7 +312,7 @@
   .page-body a:hover { opacity: 0.5; }
   .page-body strong { font-weight: 700; }
 
-  /* ── DYNAMIC CONTENT BLOCKS (NO LINES) ── */
+  /* ── DYNAMIC CONTENT BLOCKS ── */
   .tldr {
     background: var(--black);
     color: var(--white);
@@ -344,7 +345,7 @@
   }
   .example p { margin: 0; font-size: 1.05rem; }
 
-  /* ── LISTS & TABLES (BORDERLESS / STRIPED) ── */
+  /* ── LISTS & TABLES ── */
   .page-body ul, .page-body ol { margin: 32px 0 40px 24px; }
   .page-body li { margin-bottom: 16px; font-size: 1.1rem; }
 
@@ -364,7 +365,7 @@
   tr:nth-child(odd) td { background: var(--stripe); }
   tr:nth-child(even) td { background: #eaeaea; }
 
-  /* ── FAQ ACCORDION (NO BORDERS) ── */
+  /* ── FAQ ACCORDION ── */
   .faq { margin: 80px 0; }
   .faq-label {
     font-size: 0.8rem;
@@ -392,7 +393,7 @@
   .faq-a { font-size: 1.05rem; display: none; margin-top: 24px; opacity: 0.8; line-height: 1.8; }
   .faq-a.open { display: block; animation: fadeUp 0.3s ease; }
 
-  /* ── RELATED TOPICS (BLACK BLOCK) ── */
+  /* ── RELATED TOPICS ── */
   .related { 
     margin-top: 100px; 
     padding: 64px 48px; 
@@ -410,7 +411,6 @@
   }
   .related-links { display: flex; flex-direction: column; gap: 16px; }
   
-  /* SPECIFICITY FIX FOR RELATED LINKS SO THEY ARE WHITE BY DEFAULT */
   .page-body .related a.related-link {
     font-family: var(--display);
     font-size: 1.4rem;
@@ -461,7 +461,7 @@
     .home-hero h1 { font-size: 3.2rem; }
     .tldr, .example, .related, .faq-item { padding: 32px 24px; }
     .home-info-section { padding: 48px 24px; }
-    .header-links { display: none; } /* Kept clean on small screens */
+    .header-links { display: none; }
     .step { padding-left: 60px; }
     .step::before { font-size: 1.8rem; }
   }
@@ -483,7 +483,7 @@
   </div>
 </header>
 
-<div id="home" class="page active">
+<div id="home" class="page active" data-title="SMM Panel.Website — Independent SMM Panel Resource" data-description="A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem." data-slug="">
   <div class="home-hero animate-up delay-1">
     <p class="home-hero-label">Est. 2026 &nbsp;·&nbsp; Free &nbsp;·&nbsp; Independent</p>
     <h1>Everything About<br>SMM Panels.</h1>
@@ -517,7 +517,7 @@
   </div>
 </div>
 
-<div id="p1" class="page">
+<div id="p1" class="page" data-title="What Is an SMM Panel? | SMM Panel.Website" data-description="Learn what an SMM panel is, how the wholesale social media marketing ecosystem works, and who utilizes these digital growth services." data-slug="what-is-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 01</p>
@@ -576,15 +576,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p14')">What Is a Child Panel?</a>
+        <a class="related-link" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
+        <a class="related-link" onclick="showPage('p14')">What Is a Child Panel?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p2" class="page">
+<div id="p2" class="page" data-title="Is It Safe to Use an SMM Panel? | SMM Panel.Website" data-description="Understand the risks associated with SMM panels, from account suspensions to payment fraud, and learn how to safely navigate the market." data-slug="is-it-safe-to-use-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 02</p>
@@ -635,15 +635,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p11')">How to Avoid Scams</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
+        <a class="related-link" onclick="showPage('p11')">How to Avoid Scams</a>
+        <a class="related-link" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
+        <a class="related-link" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p3" class="page">
+<div id="p3" class="page" data-title="How to Start an SMM Panel Business | SMM Panel.Website" data-description="A step-by-step guide on how to launch your own profitable SMM panel reseller business, acquire scripts, and source wholesale API providers." data-slug="how-to-start-an-smm-panel-business">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 03</p>
@@ -704,15 +704,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p4')">SMM Panel Script: What Is It?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p14')">What Is a Child Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p12')">Who Is the Main SMM Panel Provider?</a>
+        <a class="related-link" onclick="showPage('p4')">SMM Panel Script: What Is It?</a>
+        <a class="related-link" onclick="showPage('p14')">What Is a Child Panel?</a>
+        <a class="related-link" onclick="showPage('p12')">Who Is the Main SMM Panel Provider?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p4" class="page">
+<div id="p4" class="page" data-title="SMM Panel Script: What Is It? | SMM Panel.Website" data-description="Discover what an SMM panel script is, the difference between SaaS and self-hosted solutions, and why scripts are essential for automation." data-slug="smm-panel-script-what-is-it">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 04</p>
@@ -766,15 +766,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p3')">How to Start an SMM Panel Business</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p14')">What Is a Child Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p6')">What Does "Drip-Feed" Mean?</a>
+        <a class="related-link" onclick="showPage('p3')">How to Start an SMM Panel Business</a>
+        <a class="related-link" onclick="showPage('p14')">What Is a Child Panel?</a>
+        <a class="related-link" onclick="showPage('p6')">What Does "Drip-Feed" Mean?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p5" class="page">
+<div id="p5" class="page" data-title="What Does Refill Mean in SMM Panels? | SMM Panel.Website" data-description="Understand the concept of refills, guarantees, and metric drop-offs within the social media marketing panel ecosystem." data-slug="what-does-refill-mean-in-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 05</p>
@@ -823,15 +823,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p6')">What Does "Drip-Feed" Mean?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p1')">What Is an SMM Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
+        <a class="related-link" onclick="showPage('p6')">What Does "Drip-Feed" Mean?</a>
+        <a class="related-link" onclick="showPage('p1')">What Is an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p6" class="page">
+<div id="p6" class="page" data-title="What Does Drip-Feed Mean in SMM Panels? | SMM Panel.Website" data-description="Learn how drip-feed pacing works on an SMM panel to simulate organic growth and prevent social media algorithms from flagging your account." data-slug="what-does-drip-feed-mean-in-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 06</p>
@@ -878,15 +878,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p5')">What Does "Refill" Mean?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
+        <a class="related-link" onclick="showPage('p5')">What Does "Refill" Mean?</a>
+        <a class="related-link" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p7" class="page">
+<div id="p7" class="page" data-title="How to Add Funds in an SMM Panel | SMM Panel.Website" data-description="A guide to the prepaid wallet system used by SMM panels, including crypto, Stripe, and PayPal payment processors." data-slug="how-to-add-funds-in-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 07</p>
@@ -936,15 +936,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p11')">How to Avoid Scams</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p11')">How to Avoid Scams</a>
+        <a class="related-link" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
+        <a class="related-link" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p8" class="page">
+<div id="p8" class="page" data-title="Pros & Cons of Using an SMM Panel | SMM Panel.Website" data-description="An honest look at the advantages of bulk SMM pricing versus the inherent risks and ethical drawbacks of artificial social media engagement." data-slug="pros-and-cons-of-using-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 08</p>
@@ -991,15 +991,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p13')">Which SMM Panel Is Best?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p6')">What Does "Drip-Feed" Mean?</a>
+        <a class="related-link" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p13')">Which SMM Panel Is Best?</a>
+        <a class="related-link" onclick="showPage('p6')">What Does "Drip-Feed" Mean?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p9" class="page">
+<div id="p9" class="page" data-title="Safest & Most Trusted SMM Panels (Market Research 2026) | SMM Panel.Website" data-description="A data-driven analysis of the top SMM panels in 2026 based on independent Trustpilot reviews, directory rankings, and community sentiment." data-slug="safest-and-most-trusted-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 09</p>
@@ -1051,15 +1051,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p13')">Which SMM Panel Is Best?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p11')">How to Avoid Scams</a>
+        <a class="related-link" onclick="showPage('p13')">Which SMM Panel Is Best?</a>
+        <a class="related-link" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
+        <a class="related-link" onclick="showPage('p11')">How to Avoid Scams</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p10" class="page">
+<div id="p10" class="page" data-title="How to Find and Compare SMM Panels | SMM Panel.Website" data-description="Learn the systematic method for evaluating an SMM panel, using aggregator directories, forum reviews, and running controlled API test orders." data-slug="how-to-find-and-compare-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 10</p>
@@ -1108,15 +1108,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p11')">How to Avoid Scams</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p9')">Safest &amp; Most Trusted SMM Panels</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p7')">How to Add Funds in an SMM Panel</a>
+        <a class="related-link" onclick="showPage('p11')">How to Avoid Scams</a>
+        <a class="related-link" onclick="showPage('p9')">Safest &amp; Most Trusted SMM Panels</a>
+        <a class="related-link" onclick="showPage('p7')">How to Add Funds in an SMM Panel</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p11" class="page">
+<div id="p11" class="page" data-title="How to Avoid Scams When Using an SMM Panel | SMM Panel.Website" data-description="A breakdown of the most common SMM panel exit scams, phishing attempts, and red flags to look out for before depositing funds." data-slug="how-to-avoid-scams-when-using-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 11</p>
@@ -1157,15 +1157,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p7')">How to Add Funds in an SMM Panel</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
+        <a class="related-link" onclick="showPage('p7')">How to Add Funds in an SMM Panel</a>
+        <a class="related-link" onclick="showPage('p2')">Is It Safe to Use an SMM Panel?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p12" class="page">
+<div id="p12" class="page" data-title="Who Is the Main SMM Panel Provider? | SMM Panel.Website" data-description="Explore the supply chain of the SMM industry and discover the verified root providers for platforms like Instagram, YouTube, and Telegram." data-slug="who-is-the-main-smm-panel-provider">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 12</p>
@@ -1217,15 +1217,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p14')">What Is a Child Panel?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p3')">How to Start an SMM Panel Business</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p1')">What Is an SMM Panel?</a>
+        <a class="related-link" onclick="showPage('p14')">What Is a Child Panel?</a>
+        <a class="related-link" onclick="showPage('p3')">How to Start an SMM Panel Business</a>
+        <a class="related-link" onclick="showPage('p1')">What Is an SMM Panel?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p13" class="page">
+<div id="p13" class="page" data-title="Which SMM Panel Is Best? | SMM Panel.Website" data-description="A breakdown of the best SMM panels categorized by use case, highlighting the top 10 choices for agencies and resellers." data-slug="which-smm-panel-is-best">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 13</p>
@@ -1290,15 +1290,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p9')">Safest &amp; Most Trusted SMM Panels (Full Research)</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
+        <a class="related-link" onclick="showPage('p9')">Safest &amp; Most Trusted SMM Panels (Full Research)</a>
+        <a class="related-link" onclick="showPage('p10')">How to Find and Compare SMM Panels</a>
+        <a class="related-link" onclick="showPage('p8')">Pros &amp; Cons of Using an SMM Panel</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="p14" class="page">
+<div id="p14" class="page" data-title="What Is a Child Panel in SMM Panels? | SMM Panel.Website" data-description="Understand how child panels function as API-connected white-label storefronts for SMM resellers to instantly launch their own businesses." data-slug="what-is-a-child-panel-in-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 14</p>
@@ -1348,15 +1348,15 @@
     <div class="related">
       <div class="related-label">Related Topics</div>
       <div class="related-links">
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p3')">How to Start an SMM Panel Business</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p4')">SMM Panel Script: What Is It?</a>
-        <a class="related-link" href="javascript:void(0)" onclick="showPage('p12')">Who Is the Main SMM Panel Provider?</a>
+        <a class="related-link" onclick="showPage('p3')">How to Start an SMM Panel Business</a>
+        <a class="related-link" onclick="showPage('p4')">SMM Panel Script: What Is It?</a>
+        <a class="related-link" onclick="showPage('p12')">Who Is the Main SMM Panel Provider?</a>
       </div>
     </div>
   </div>
 </div>
 
-<div id="about" class="page">
+<div id="about" class="page" data-title="About | SMM Panel.Website" data-description="Learn about our mission to demystify the SMM industry and provide unbiased, independent market research on digital growth services." data-slug="about">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Information</p>
@@ -1373,7 +1373,7 @@
   </div>
 </div>
 
-<div id="contact" class="page">
+<div id="contact" class="page" data-title="Contact Us | SMM Panel.Website" data-description="Get in touch with the team behind SMM Panel.Website for inquiries, research data, or scam reports." data-slug="contact">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Information</p>
@@ -1392,7 +1392,7 @@
   </div>
 </div>
 
-<div id="terms" class="page">
+<div id="terms" class="page" data-title="Terms & Disclaimer | SMM Panel.Website" data-description="Read our terms of service and liability disclaimers regarding the educational use of SMM panel information." data-slug="terms-and-disclaimer">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Legal</p>
@@ -1415,7 +1415,7 @@
   </div>
 </div>
 
-<div id="privacy" class="page">
+<div id="privacy" class="page" data-title="Privacy Policy | SMM Panel.Website" data-description="Understand how SMM Panel.Website handles data collection, analytics, and browser cookies." data-slug="privacy-policy">
   <div class="inner-nav animate-up delay-1"><a class="back-link" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Legal</p>
@@ -1450,32 +1450,72 @@
 </footer>
 
 <script>
-  function showPage(id) {
-    // Remove active class from all pages
+  function showPage(id, pushHistory = true) {
     document.querySelectorAll('.page').forEach(p => {
       p.classList.remove('active');
     });
     
-    // Add active class to target
     const target = document.getElementById(id);
     if (target) {
       target.classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      const title = target.getAttribute('data-title') || 'SMM Panel.Website — Independent SMM Panel Resource';
+      const desc = target.getAttribute('data-description') || 'A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.';
+      const slug = target.getAttribute('data-slug') || '';
+
+      document.title = title;
+      
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+          metaDesc.setAttribute('content', desc);
+      }
+
+      if (pushHistory) {
+          const newUrl = slug ? '#' + slug : window.location.pathname;
+          history.pushState({ id: id }, title, newUrl);
+      }
     }
   }
 
   function toggleFaq(el) {
     const answer = el.nextElementSibling;
     const isOpen = answer.classList.contains('open');
-    // Close all in same faq block
     el.closest('.faq').querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
     el.closest('.faq').querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
-    // Open target if it wasn't already open
     if (!isOpen) {
       el.classList.add('open');
       answer.classList.add('open');
     }
   }
+
+  window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.substring(1); 
+      if (hash) {
+          const targetPage = document.querySelector(`.page[data-slug="${hash}"]`);
+          if (targetPage) {
+              showPage(targetPage.id, false);
+          } else {
+              showPage('home', false);
+          }
+      } else {
+          showPage('home', false);
+      }
+  });
+
+  window.addEventListener('popstate', (event) => {
+      if (event.state && event.state.id) {
+          showPage(event.state.id, false);
+      } else {
+          const hash = window.location.hash.substring(1);
+          if (hash) {
+              const targetPage = document.querySelector(`.page[data-slug="${hash}"]`);
+              if (targetPage) showPage(targetPage.id, false);
+          } else {
+              showPage('home', false);
+          }
+      }
+  });
 </script>
 </body>
 </html>
