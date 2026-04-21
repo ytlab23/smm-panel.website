@@ -1,0 +1,126 @@
+{
+  "lang_name": "العربية",
+  "pages": {
+    "home": {
+      "title": "SMM Panel Info — مورد مستقل عن لوحات SMM",
+      "description": "مورد مجاني ومستقل يشرح كيفية عمل لوحات SMM ومن يستخدمها وكيفية التنقل الآمن في هذا النظام الرقمي الهائل."
+    },
+    "p1": {
+      "title": "ما هي لوحة SMM؟ | SMM Panel Info",
+      "description": "تعرّف على ماهية لوحة SMM وكيفية عمل نظام التسويق عبر وسائل التواصل بالجملة ومن يستخدم هذه الخدمات."
+    },
+    "p2": {
+      "title": "هل استخدام لوحة SMM آمن؟ | SMM Panel Info",
+      "description": "افهم مخاطر لوحات SMM، من تعليق الحسابات إلى الاحتيال في الدفع، وتعلم كيفية التنقل في السوق بأمان."
+    },
+    "p3": {
+      "title": "كيفية بدء عمل لوحة SMM | SMM Panel Info",
+      "description": "دليل خطوة بخطوة لإطلاق مشروع إعادة بيع لوحات SMM المربح والحصول على السكريبتات ومزودي API بالجملة."
+    },
+    "p4": {
+      "title": "سكريبت لوحة SMM: ما هو؟ | SMM Panel Info",
+      "description": "اكتشف ما هو سكريبت لوحة SMM، الفرق بين SaaS والاستضافة الذاتية، ولماذا تعد السكريبتات أساسية للأتمتة."
+    },
+    "p5": {
+      "title": "ماذا يعني Refill في لوحات SMM؟ | SMM Panel Info",
+      "description": "افهم مفاهيم refill والضمانات وفقدان المقاييس داخل نظام لوحات التسويق عبر وسائل التواصل."
+    },
+    "p6": {
+      "title": "ماذا يعني Drip-Feed في لوحات SMM؟ | SMM Panel Info",
+      "description": "تعرّف على كيفية محاكاة نظام drip-feed للنمو العضوي ومنع خوارزميات المنصات من رصد حسابك."
+    },
+    "p7": {
+      "title": "كيفية إضافة رصيد إلى لوحة SMM | SMM Panel Info",
+      "description": "دليل لنظام المحفظة المدفوعة مسبقًا في لوحات SMM، بما في ذلك العملات الرقمية وStripe وPayPal."
+    },
+    "p8": {
+      "title": "إيجابيات وسلبيات استخدام لوحة SMM | SMM Panel Info",
+      "description": "نظرة صريحة على مزايا أسعار SMM بالجملة مقابل المخاطر والسلبيات الأخلاقية للتفاعل الاصطناعي."
+    },
+    "p9": {
+      "title": "أأمن لوحات SMM وأكثرها موثوقية (أبحاث السوق 2026) | SMM Panel Info",
+      "description": "تحليل مستند إلى البيانات لأفضل لوحات SMM لعام 2026 استنادًا إلى مراجعات Trustpilot المستقلة والأدلة وآراء المجتمع."
+    },
+    "p10": {
+      "title": "كيفية العثور على لوحات SMM ومقارنتها | SMM Panel Info",
+      "description": "الطريقة المنهجية لتقييم لوحة SMM باستخدام أدلة التجميع ومراجعات المنتديات وطلبات اختبار API المحكومة."
+    },
+    "p11": {
+      "title": "كيفية تجنب عمليات الاحتيال في لوحات SMM | SMM Panel Info",
+      "description": "استعراض أكثر عمليات الخروج احتيالًا في لوحات SMM، ومحاولات التصيد، وعلامات التحذير قبل الإيداع."
+    },
+    "p12": {
+      "title": "من هو المزود الرئيسي للوحات SMM؟ | SMM Panel Info",
+      "description": "استكشف سلسلة توريد صناعة SMM واكتشف المزودين الرئيسيين الموثقين لمنصات مثل Instagram وYouTube وTelegram."
+    },
+    "p13": {
+      "title": "ما هي أفضل لوحة SMM؟ | SMM Panel Info",
+      "description": "استعراض لأفضل لوحات SMM مصنفة حسب حالة الاستخدام مع توصية أفضل 10 خيارات للوكالات والموزعين."
+    },
+    "p14": {
+      "title": "ما هي لوحة Child Panel في لوحات SMM؟ | SMM Panel Info",
+      "description": "افهم كيف تعمل لوحات child panel كواجهات API ذات علامة بيضاء لإطلاق أعمال الموزعين فورًا."
+    },
+    "about": {
+      "title": "حول الموقع | SMM Panel Info",
+      "description": "تعرف على مهمتنا في توضيح صناعة SMM وتقديم أبحاث سوق مستقلة ومحايدة عن خدمات النمو الرقمي."
+    },
+    "contact": {
+      "title": "تواصل معنا | SMM Panel Info",
+      "description": "تواصل مع فريق SMM Panel Info للاستفسارات أو بيانات الأبحاث أو التبليغ عن عمليات الاحتيال."
+    },
+    "terms": {
+      "title": "الشروط وإخلاء المسؤولية | SMM Panel Info",
+      "description": "اقرأ شروط خدمتنا وإخلاء المسؤولية بخصوص الاستخدام التعليمي لمعلومات لوحات SMM."
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية | SMM Panel Info",
+      "description": "افهم كيف يتعامل SMM Panel Info مع جمع البيانات والتحليلات وملفات تعريف الارتباط."
+    }
+  },
+  "strings": {
+    ">About</a>": ">حول الموقع</a>",
+    ">Contact</a>": ">تواصل معنا</a>",
+    ">Independent Resource</span>": ">مورد مستقل</span>",
+    ">Terms &amp; Disclaimer</a>": ">الشروط وإخلاء المسؤولية</a>",
+    ">Privacy Policy</a>": ">سياسة الخصوصية</a>",
+    ">← Home</a>": ">← الرئيسية</a>",
+    ">Related Topics</div>": ">موضوعات ذات صلة</div>",
+    ">Topic 01</p>": ">الموضوع 01</p>",
+    ">Topic 02</p>": ">الموضوع 02</p>",
+    ">Topic 03</p>": ">الموضوع 03</p>",
+    ">Topic 04</p>": ">الموضوع 04</p>",
+    ">Topic 05</p>": ">الموضوع 05</p>",
+    ">Topic 06</p>": ">الموضوع 06</p>",
+    ">Topic 07</p>": ">الموضوع 07</p>",
+    ">Topic 08</p>": ">الموضوع 08</p>",
+    ">Topic 09</p>": ">الموضوع 09</p>",
+    ">Topic 10</p>": ">الموضوع 10</p>",
+    ">Topic 11</p>": ">الموضوع 11</p>",
+    ">Topic 12</p>": ">الموضوع 12</p>",
+    ">Topic 13</p>": ">الموضوع 13</p>",
+    ">Topic 14</p>": ">الموضوع 14</p>",
+    ">Information</p>": ">معلومات</p>",
+    ">Legal</p>": ">قانوني</p>",
+    "Est. 2026 &nbsp;·&nbsp; Free &nbsp;·&nbsp; Independent": "تأسس 2026 &nbsp;·&nbsp; مجاني &nbsp;·&nbsp; مستقل",
+    "Everything About<br>SMM Panels.": "كل شيء عن<br>لوحات SMM.",
+    "A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.": "مورد مجاني ومستقل يشرح كيفية عمل لوحات SMM ومن يستخدمها وكيفية التنقل الآمن في هذا النظام الرقمي الهائل.",
+    ">Demystifying the SMM Ecosystem</h2>": ">كشف الغموض عن نظام SMM</h2>",
+    "14 Core Topics &nbsp;·&nbsp; Select to explore": "14 موضوعًا أساسيًا &nbsp;·&nbsp; اختر للاستكشاف",
+    ">What Is an SMM Panel?</div>": ">ما هي لوحة SMM؟</div>",
+    ">Is It Safe to Use an SMM Panel?</div>": ">هل استخدام لوحة SMM آمن؟</div>",
+    ">How to Start an SMM Panel Business</div>": ">كيفية بدء عمل لوحة SMM</div>",
+    ">SMM Panel Script: What Is It?</div>": ">سكريبت لوحة SMM: ما هو؟</div>",
+    ">What Does &quot;Refill&quot; Mean?</div>": ">ماذا يعني &quot;Refill&quot;؟</div>",
+    ">What Does &quot;Drip-Feed&quot; Mean?</div>": ">ماذا يعني &quot;Drip-Feed&quot;؟</div>",
+    ">How to Add Funds in an SMM Panel</div>": ">كيفية إضافة رصيد إلى لوحة SMM</div>",
+    ">Pros &amp; Cons of Using an SMM Panel</div>": ">إيجابيات وسلبيات استخدام لوحة SMM</div>",
+    ">Safest &amp; Most Trusted SMM Panels (2026)</div>": ">أأمن لوحات SMM وأكثرها موثوقية (2026)</div>",
+    ">How to Find and Compare SMM Panels</div>": ">كيفية العثور على لوحات SMM ومقارنتها</div>",
+    ">How to Avoid Scams</div>": ">كيفية تجنب عمليات الاحتيال</div>",
+    ">Who Is the Main SMM Panel Provider?</div>": ">من هو المزود الرئيسي للوحات SMM؟</div>",
+    ">Which SMM Panel Is Best?</div>": ">ما هي أفضل لوحة SMM؟</div>",
+    ">What Is a Child Panel?</div>": ">ما هي لوحة Child Panel؟</div>",
+    "© 2026 SMM Panel Info — All rights reserved. Independent &amp; non-commercial. Not affiliated with any SMM panel, service, or provider listed.": "© 2026 SMM Panel Info — جميع الحقوق محفوظة. مستقل وغير تجاري. غير تابع لأي لوحة SMM أو خدمة أو مزود مذكور."
+  }
+}

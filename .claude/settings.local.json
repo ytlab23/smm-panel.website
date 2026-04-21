@@ -3,7 +3,26 @@
     "allow": [
       "Bash(git mv *)",
       "Bash(python3 _generate_pages.py)",
-      "Bash(sed -n '/TL;DR/,/<\\\\/div>/p' how-to-start-an-smm-panel-business/index.html)"
+      "Bash(sed -n '/TL;DR/,/<\\\\/div>/p' how-to-start-an-smm-panel-business/index.html)",
+      "Bash(python3 _build_translations.py)",
+      "Bash(grep -oE '>Qu[^<]{0,60}</div>' fr/index.html)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/_source_bodies.json'\\)\\); print\\('Keys:', list\\(d.keys\\(\\)\\)\\); print\\('Count:', len\\(d\\)\\); [print\\(k, len\\(v\\)\\) for k,v in d.items\\(\\)]\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/_source_bodies.json'\\)\\); print\\('keys:', list\\(d.keys\\(\\)\\)\\); print\\('count:', len\\(d\\)\\); [print\\(k, len\\(v\\)\\) for k,v in d.items\\(\\)]\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/_source_bodies.json'\\)\\); print\\('keys:', list\\(d.keys\\(\\)\\)\\); [print\\(k, len\\(v\\)\\) for k,v in d.items\\(\\)]\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/_source_bodies.json'\\)\\); print\\('keys:', list\\(d.keys\\(\\)\\)\\); print\\('lengths:', {k: len\\(v\\) for k,v in d.items\\(\\)}\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/translations/zh_bodies.json'\\)\\); assert len\\(d\\)==19; assert sorted\\(d.keys\\(\\)\\)==['about','contact','home','p1','p10','p11','p12','p13','p14','p2','p3','p4','p5','p6','p7','p8','p9','privacy','terms']; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/translations/fr_bodies.json'\\)\\); assert len\\(d\\)==19; assert sorted\\(d.keys\\(\\)\\)==['about','contact','home','p1','p10','p11','p12','p13','p14','p2','p3','p4','p5','p6','p7','p8','p9','privacy','terms']; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/Users/niangamadou888/Documents/smmpanelinfo.com/translations/ko_bodies.json'\\)\\); assert len\\(d\\)==19; assert sorted\\(d.keys\\(\\)\\)==['about','contact','home','p1','p10','p11','p12','p13','p14','p2','p3','p4','p5','p6','p7','p8','p9','privacy','terms']; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 translations/build_bn.py)",
+      "Bash(python3 translations/build_hi.py)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('translations/hi_bodies.json'\\)\\); assert len\\(d\\)==19; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 translations/build_ar.py)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('translations/ar_bodies.json'\\)\\); assert len\\(d\\)==19; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('translations/bn_bodies.json'\\)\\); assert len\\(d\\)==19; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 translations/build_tr_b.py)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('translations/tr_part_b.json'\\)\\); assert len\\(d\\)==9; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")",
+      "Bash(python3 translations/build_tr_a.py)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('translations/tr_part_a.json'\\)\\); assert len\\(d\\)==10; print\\('OK', sum\\(len\\(v\\) for v in d.values\\(\\)\\)\\)\")"
     ]
   }
 }

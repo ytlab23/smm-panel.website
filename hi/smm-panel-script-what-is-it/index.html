@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+<title>SMM पैनल स्क्रिप्ट क्या है? | SMM Panel Info</title>
+<meta name="description" content="जानें SMM पैनल स्क्रिप्ट क्या है, SaaS और सेल्फ-होस्टेड में अंतर, और ऑटोमेशन के लिए स्क्रिप्ट क्यों ज़रूरी हैं।">
+<link rel="canonical" href="https://smmpanelinfo.com/hi/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="en" href="https://smmpanelinfo.com/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="zh" href="https://smmpanelinfo.com/zh/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="es" href="https://smmpanelinfo.com/es/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="hi" href="https://smmpanelinfo.com/hi/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="ar" href="https://smmpanelinfo.com/ar/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="pt" href="https://smmpanelinfo.com/pt/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="bn" href="https://smmpanelinfo.com/bn/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="ru" href="https://smmpanelinfo.com/ru/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="ja" href="https://smmpanelinfo.com/ja/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="de" href="https://smmpanelinfo.com/de/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="fr" href="https://smmpanelinfo.com/fr/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="ko" href="https://smmpanelinfo.com/ko/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="it" href="https://smmpanelinfo.com/it/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="tr" href="https://smmpanelinfo.com/tr/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="id" href="https://smmpanelinfo.com/id/smm-panel-script-what-is-it">
+<link rel="alternate" hreflang="x-default" href="https://smmpanelinfo.com/smm-panel-script-what-is-it">
+<meta name="application-name" content="SMM Panel Info">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SMM Panel Info">
+<meta property="og:locale" content="hi">
+<meta property="og:title" content="SMM पैनल स्क्रिप्ट क्या है? | SMM Panel Info">
+<meta property="og:description" content="जानें SMM पैनल स्क्रिप्ट क्या है, SaaS और सेल्फ-होस्टेड में अंतर, और ऑटोमेशन के लिए स्क्रिप्ट क्यों ज़रूरी हैं।">
+<meta property="og:url" content="https://smmpanelinfo.com/hi/smm-panel-script-what-is-it">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SMM पैनल स्क्रिप्ट क्या है? | SMM Panel Info">
+<meta name="twitter:description" content="जानें SMM पैनल स्क्रिप्ट क्या है, SaaS और सेल्फ-होस्टेड में अंतर, और ऑटोमेशन के लिए स्क्रिप्ट क्यों ज़रूरी हैं।">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Epilogue:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  /* ── CORE RESET & VARIABLES ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --stripe: #f4f4f5;
+    --display: 'Cormorant Garamond', Georgia, serif;
+    --body: 'Epilogue', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── PAGE STATES & ANIMATIONS ── */
+  .page { display: none; }
+  .page.active { display: block; }
+  
+  .page.active .animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .delay-1 { animation-delay: 0.05s; }
+  .delay-2 { animation-delay: 0.10s; }
+  .delay-3 { animation-delay: 0.15s; }
+  .delay-4 { animation-delay: 0.20s; }
+
+  /* ── HEADER & NAVIGATION ── */
+  .site-header {
+    padding: 32px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  }
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+  }
+  .nav-logo {
+    font-family: var(--body);
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .header-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .header-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .header-link:hover { opacity: 0.5; }
+  .nav-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--black);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 40px;
+  }
+
+  /* ── LANGUAGE SWITCHER ── */
+  .header-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .lang-switch { position: relative; }
+  .lang-switch > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--black);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    transition: border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .lang-switch > summary:hover { border-color: rgba(0, 0, 0, 0.45); }
+  .lang-switch[open] > summary { border-color: rgba(0, 0, 0, 0.45); background: var(--stripe); }
+  .lang-switch > summary::-webkit-details-marker { display: none; }
+  .lang-switch > summary::marker { content: ''; }
+  .lang-caret { font-size: 0.6rem; opacity: 0.6; }
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    min-width: 190px;
+    max-height: 65vh;
+    overflow-y: auto;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    padding: 6px 0;
+    z-index: 101;
+  }
+  html[dir="rtl"] .lang-menu { right: auto; left: 0; }
+  .lang-item {
+    display: block;
+    padding: 9px 18px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.88rem;
+    line-height: 1.3;
+    transition: background 0.15s;
+  }
+  .lang-item:hover { background: var(--stripe); }
+  .lang-item.active { font-weight: 700; background: var(--stripe); }
+
+  /* ── LAYOUT CONTAINERS ── */
+  .container { max-width: 860px; margin: 0 auto; padding: 0 5vw; }
+
+  /* ── HOME HERO & INFO ── */
+  .home-hero {
+    padding: 100px 5vw 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home-hero-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 24px;
+    opacity: 0.5;
+  }
+  .home-hero h1 {
+    font-family: var(--display);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+  .home-hero p {
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  .home-info-section {
+    max-width: 860px;
+    margin: 0 auto 80px;
+    padding: 60px 48px;
+    background: var(--stripe);
+    text-align: left;
+  }
+  .home-info-section h2 {
+    font-family: var(--display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .home-info-section p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  .home-info-section p:last-child { margin-bottom: 0; }
+
+  /* ── GRID SECTION ── */
+  .grid-section { padding: 40px 5vw 120px; max-width: 1200px; margin: 0 auto; }
+  .grid-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.4;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    border: 3px solid var(--black);
+    padding: 40px 32px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover { 
+    background: var(--black); 
+    color: var(--white); 
+    transform: translateY(-8px); 
+  }
+  .card-num {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    opacity: 0.4;
+    margin-bottom: 24px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+  }
+  .card:hover .card-num { opacity: 0.7; color: var(--white); }
+  .card:hover .card-title { color: var(--white); }
+  .card-title {
+    font-family: var(--display);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  .card-arrow {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .card:hover .card-arrow { opacity: 1; transform: translate(4px, -4px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 100px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .footer-logo {
+    font-family: var(--body);
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-link {
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .footer-link:hover { opacity: 1; }
+  footer p { font-size: 0.85rem; opacity: 0.4; font-weight: 400; max-width: 500px; margin: 0; }
+
+  /* ── INNER PAGE NAVIGATION ── */
+  .inner-nav {
+    padding: 60px 5vw 40px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .back-link {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--stripe);
+    border-radius: 40px;
+    transition: background 0.2s;
+  }
+  .back-link:hover { background: #e4e4e5; }
+
+  /* ── ARTICLE TYPOGRAPHY & LAYOUT ── */
+  .page-header { padding: 0 5vw 40px; max-width: 860px; margin: 0 auto; }
+  .page-num { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.4; margin-bottom: 24px; font-weight: 600; }
+  .page-header h1 {
+    font-family: var(--display);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .page-body { padding: 0 5vw 100px; max-width: 860px; margin: 0 auto; }
+  .page-body h2 {
+    font-family: var(--display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 80px 0 32px;
+    letter-spacing: -0.01em;
+  }
+  .page-body h3 {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 48px 0 20px;
+  }
+  .page-body p { margin-bottom: 24px; font-size: 1.1rem; color: #1a1a1a; }
+  .page-body a { color: var(--black); font-weight: 700; text-decoration: none; transition: opacity 0.2s; cursor: pointer; }
+  .page-body a:hover { opacity: 0.5; }
+  .page-body strong { font-weight: 700; }
+
+  /* ── DYNAMIC CONTENT BLOCKS ── */
+  .tldr {
+    background: var(--black);
+    color: var(--white);
+    padding: 48px;
+    margin-bottom: 64px;
+  }
+  .tldr-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 16px;
+    opacity: 0.5;
+    color: var(--white);
+  }
+  .tldr p { font-size: 1.15rem; line-height: 1.75; margin: 0; color: var(--white); }
+  .tldr a { color: var(--white) !important; font-weight: 700; }
+
+  .example {
+    padding: 40px 48px;
+    margin: 48px 0;
+    background: var(--stripe);
+  }
+  .example-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-bottom: 16px;
+  }
+  .example p { margin: 0; font-size: 1.05rem; }
+
+  /* ── LISTS & TABLES ── */
+  .page-body ul, .page-body ol { margin: 32px 0 40px 24px; }
+  .page-body li { margin-bottom: 16px; font-size: 1.1rem; }
+
+  .table-wrap { overflow-x: auto; margin: 48px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+  th {
+    background: var(--black);
+    color: var(--white);
+    padding: 24px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  td { padding: 20px 24px; vertical-align: top; border: 4px solid var(--white); }
+  tr:nth-child(odd) td { background: var(--stripe); }
+  tr:nth-child(even) td { background: #eaeaea; }
+
+  /* ── FAQ ACCORDION ── */
+  .faq { margin: 80px 0; }
+  .faq-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-bottom: 32px;
+  }
+  .faq-item { background: var(--stripe); margin-bottom: 16px; padding: 32px; transition: background 0.2s; }
+  .faq-item:hover { background: #e9e9e9; }
+  .faq-q {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+  }
+  .faq-q::after { content: '+'; font-size: 1.5rem; font-weight: 400; flex-shrink: 0; opacity: 0.4; }
+  .faq-q.open::after { content: '−'; }
+  .faq-a { font-size: 1.05rem; display: none; margin-top: 24px; opacity: 0.8; line-height: 1.8; }
+  .faq-a.open { display: block; animation: fadeUp 0.3s ease; }
+
+  /* ── RELATED TOPICS ── */
+  .related { 
+    margin-top: 100px; 
+    padding: 64px 48px; 
+    background: var(--black); 
+    color: var(--white); 
+  }
+  .related-label { 
+    font-size: 0.75rem; 
+    letter-spacing: 0.15em; 
+    text-transform: uppercase; 
+    font-weight: 600; 
+    opacity: 0.5; 
+    margin-bottom: 32px; 
+    color: var(--white);
+  }
+  .related-links { display: flex; flex-direction: column; gap: 16px; }
+  
+  .page-body .related a.related-link {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: opacity 0.15s;
+    opacity: 0.8;
+  }
+  .page-body .related a.related-link:hover { 
+    opacity: 1; 
+    text-decoration: underline; 
+    text-underline-offset: 4px; 
+    color: var(--white); 
+  }
+  .page-body .related a.related-link::before { 
+    content: '→'; 
+    font-family: var(--body); 
+    font-weight: 300; 
+    opacity: 0.5; 
+    color: var(--white); 
+    text-decoration: none; 
+    display: inline-block; 
+  }
+
+  /* ── NUMBERED STEPS ── */
+  .steps { margin: 64px 0; counter-reset: step; }
+  .step { counter-increment: step; margin-bottom: 48px; padding-left: 80px; position: relative; }
+  .step::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-family: var(--display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.1;
+  }
+  .step h3 { margin-top: 0; font-size: 1.3rem; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .home-hero h1 { font-size: 3.2rem; }
+    .tldr, .example, .related, .faq-item { padding: 32px 24px; }
+    .home-info-section { padding: 48px 24px; }
+    .header-links { display: none; }
+    .header-right { gap: 0; }
+    .step { padding-left: 60px; }
+    .step::before { font-size: 1.8rem; }
+    .lang-menu { min-width: 170px; max-height: 55vh; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo-wrap" href="/hi/" style="text-decoration:none;color:inherit;">
+    <img src="/favicon.svg" alt="SMM Panel Info Icon" width="28" height="28" style="object-fit: contain;">
+    <span class="nav-logo">SMM Panel Info</span>
+  </a>
+  <div class="header-right">
+    <div class="header-links">
+      <a class="header-link" href="/hi/about">हमारे बारे में</a>
+      <a class="header-link" href="/hi/contact">संपर्क करें</a>
+      <span class="nav-tag">स्वतंत्र स्रोत</span>
+    </div>
+    <details class="lang-switch">
+      <summary aria-label="Change language">HI<span class="lang-caret" aria-hidden="true">&#9662;</span></summary>
+      <div class="lang-menu" role="menu">
+      <a class="lang-item" href="/smm-panel-script-what-is-it" hreflang="en" lang="en" dir="ltr">English</a>
+      <a class="lang-item" href="/zh/smm-panel-script-what-is-it" hreflang="zh" lang="zh" dir="ltr">中文</a>
+      <a class="lang-item" href="/es/smm-panel-script-what-is-it" hreflang="es" lang="es" dir="ltr">Español</a>
+      <a class="lang-item active" href="/hi/smm-panel-script-what-is-it" hreflang="hi" lang="hi" dir="ltr">हिन्दी</a>
+      <a class="lang-item" href="/ar/smm-panel-script-what-is-it" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+      <a class="lang-item" href="/pt/smm-panel-script-what-is-it" hreflang="pt" lang="pt" dir="ltr">Português</a>
+      <a class="lang-item" href="/bn/smm-panel-script-what-is-it" hreflang="bn" lang="bn" dir="ltr">বাংলা</a>
+      <a class="lang-item" href="/ru/smm-panel-script-what-is-it" hreflang="ru" lang="ru" dir="ltr">Русский</a>
+      <a class="lang-item" href="/ja/smm-panel-script-what-is-it" hreflang="ja" lang="ja" dir="ltr">日本語</a>
+      <a class="lang-item" href="/de/smm-panel-script-what-is-it" hreflang="de" lang="de" dir="ltr">Deutsch</a>
+      <a class="lang-item" href="/fr/smm-panel-script-what-is-it" hreflang="fr" lang="fr" dir="ltr">Français</a>
+      <a class="lang-item" href="/ko/smm-panel-script-what-is-it" hreflang="ko" lang="ko" dir="ltr">한국어</a>
+      <a class="lang-item" href="/it/smm-panel-script-what-is-it" hreflang="it" lang="it" dir="ltr">Italiano</a>
+      <a class="lang-item" href="/tr/smm-panel-script-what-is-it" hreflang="tr" lang="tr" dir="ltr">Türkçe</a>
+      <a class="lang-item" href="/id/smm-panel-script-what-is-it" hreflang="id" lang="id" dir="ltr">Bahasa Indonesia</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<div id="p4" class="page active" data-title="SMM Panel Script: What Is It? | SMM Panel Info" data-description="Discover what an SMM panel script is, the difference between SaaS and self-hosted solutions, and why scripts are essential for automation." data-slug="smm-panel-script-what-is-it">
+  <div class="inner-nav animate-up delay-1"><a class="back-link" href="/hi/">← होम</a></div>
+  <div class="page-header animate-up delay-2">
+    <p class="page-num">विषय 04</p>
+    <h1>SMM Panel Script: यह क्या है?</h1>
+  </div>
+  <div class="page-body animate-up delay-3">
+    <div class="tldr">
+      <div class="tldr-label">TL;DR</div>
+      <p>SMM panel script वह अंतर्निहित कोडबेस और कंटेंट मैनेजमेंट सिस्टम (CMS) है जो किसी SMM व्यवसाय के स्टोरफ्रंट, API कनेक्शन, भुगतान गेटवे और उपयोगकर्ता डैशबोर्ड को संचालित करता है। यह स्वचालन का इंजन है।</p>
+    </div>
+
+    <p>जब कोई उपयोगकर्ता SMM panel में लॉग इन करता है—डैशबोर्ड का उपयोग करने, वर्गीकृत सेवा सूची ब्राउज़ करने, अपना ऑर्डर इतिहास जांचने या अपना वॉलेट फंड करने के लिए—वह सारी कार्यक्षमता panel script नामक विशेष सॉफ़्टवेयर द्वारा सुगम बनाई जाती है।</p>
+
+    <p>स्क्रैच से एक जटिल, सुरक्षित, मल्टी-API-रूटिंग वेबसाइट कोड करने के लिए एक डेवलपमेंट टीम को काम पर रखने के बजाय, उद्यमी इन स्क्रिप्ट को लाइसेंस या खरीदते हैं। यदि आप अपने स्वयं के ऑपरेशन के लिए उद्योग मानक सॉफ़्टवेयर प्राप्त करना चाहते हैं, तो बुनियादी ढांचे को सुरक्षित करने के लिए <a href="https://smmpanelscript.com" target="_blank" rel="noopener">smmpanelscript.com</a> पर जाएं।</p>
+
+    <h2>Self-Hosted बनाम SaaS समाधान</h2>
+    <p>बाज़ार आम तौर पर script कार्यान्वयन के लिए दो रास्ते प्रदान करता है:</p>
+    <p><strong>Self-hosted scripts</strong> एकमुश्त खरीदे जाते हैं (आमतौर पर एक बार का लाइसेंस शुल्क) और आपके अपने वर्चुअल प्राइवेट सर्वर (VPS) पर इंस्टॉल किए जाते हैं। आप डेटाबेस, ग्राहक डेटा और कोडबेस का पूर्ण स्वामित्व बनाए रखते हैं। हालांकि, सर्वर सुरक्षा, SSL इंस्टॉलेशन और नियमित बैकअप की जिम्मेदारी आपकी होती है।</p>
+    <p><strong>SaaS (Software as a Service) scripts</strong> पूरी तरह से प्रबंधित क्लाउड प्लेटफ़ॉर्म हैं। आप एक मासिक सदस्यता का भुगतान करते हैं, अपना डोमेन उनके nameservers पर point करते हैं, और वे सभी होस्टिंग, सुरक्षा और फ़ीचर अपडेट संभालते हैं।</p>
+
+    <h2>एक अच्छी Script की महत्वपूर्ण क्षमताएं</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>फ़ीचर</th><th>यह संचालन के लिए क्यों आवश्यक है</th></tr></thead>
+        <tbody>
+          <tr><td>Provider API Sync</td><td>आपके थोक प्रदाता से सेवाएं, विवरण और मूल्य परिवर्तन स्वचालित रूप से आयात करता है।</td></tr>
+          <tr><td><a href="/hi/what-does-drip-feed-mean-in-smm-panels">Drip-Feed Controls</a></td><td>आपके ग्राहकों को क्रमिक डिलीवरी पेसिंग सेट करने देता है।</td></tr>
+          <tr><td><a href="/hi/what-does-refill-mean-in-smm-panels">Automated Refills</a></td><td>ग्राहक refill अनुरोधों को API के माध्यम से सीधे प्रदाता से जोड़ता है।</td></tr>
+          <tr><td>Mass Order Processing</td><td>मार्केटिंग एजेंसियों को एक साथ सैकड़ों लिंक और मात्राएं paste करने की अनुमति देता है।</td></tr>
+          <tr><td><a href="/hi/how-to-add-funds-in-an-smm-panel">Payment Gateways</a></td><td>Stripe, PayPal, Coinbase Commerce और क्षेत्रीय बैंकों के लिए पूर्व-निर्मित मॉड्यूल।</td></tr>
+          <tr><td><a href="/hi/what-is-a-child-panel-in-smm-panels">Child Panel Hosting</a></td><td>आपके panel को parent के रूप में कार्य करने की अनुमति देता है, आपके शीर्ष रिसेलर्स के लिए white-label साइटें बनाता है।</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Self-Hosting के लिए तकनीकी आवश्यकताएं</h2>
+    <p>यदि आप नियंत्रण को अधिकतम करने के लिए self-hosted script चुनते हैं, तो आपको आमतौर पर एक मानक LAMP/LEMP स्टैक (Linux, Apache/Nginx, MySQL, PHP) चलाने वाले Linux-आधारित VPS की आवश्यकता होगी। आधुनिक scripts को PHP 7.4 या 8.x, मजबूत Cron jobs और एक समर्पित SSL प्रमाणपत्र की आवश्यकता होती है।</p>
+
+    <div class="faq">
+      <div class="faq-label">अक्सर पूछे जाने वाले प्रश्न</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">क्या मैं script के बिना अपना SMM panel बना सकता हूं?</div>
+        <div class="faq-a">तकनीकी रूप से, हाँ, लेकिन यह अत्यधिक अकुशल और महंगा है। स्क्रैच से बनाने के लिए जटिल API लॉजिक के लिए backend development, frontend UX design, सुरक्षित भुगतान एकीकरण और व्यापक बग परीक्षण की आवश्यकता होती है। एक सिद्ध, पूर्व-निर्मित script को लाइसेंस करना उद्योग का मानक है।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">क्या "nulled" या मुफ्त scripts उपयोग के लिए सुरक्षित हैं?</div>
+        <div class="faq-a">बिल्कुल नहीं। Black-hat फ़ोरम पर पाई जाने वाली Nulled (pirated) scripts बेहद खतरनाक होती हैं। उनमें routinely दुर्भावनापूर्ण backdoors होते हैं जो आपके ग्राहकों के उपयोगकर्ता डेटा को चुरा सकते हैं, क्रिप्टो भुगतानों को intercept कर सकते हैं या आपके सर्वर संसाधनों को hijack कर सकते हैं। अपने व्यवसाय को सुरक्षित रखने के लिए हमेशा आधिकारिक रूप से लाइसेंस प्राप्त सॉफ़्टवेयर का उपयोग करें।</div>
+      </div>
+    </div>
+
+    <div class="related">
+      <div class="related-label">संबंधित विषय</div>
+      <div class="related-links">
+        <a class="related-link" href="/hi/how-to-start-an-smm-panel-business">SMM Panel व्यवसाय कैसे शुरू करें</a>
+        <a class="related-link" href="/hi/what-is-a-child-panel-in-smm-panels">Child Panel क्या है?</a>
+        <a class="related-link" href="/hi/what-does-drip-feed-mean-in-smm-panels">"Drip-Feed" का क्या अर्थ है?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <img src="/favicon.svg" alt="SMM Panel Info Icon" width="32" height="32" style="object-fit: contain;">
+    SMM Panel Info
+  </div>
+  <div class="footer-nav">
+    <a class="footer-link" href="/hi/about">हमारे बारे में</a>
+    <a class="footer-link" href="/hi/contact">संपर्क करें</a>
+    <a class="footer-link" href="/hi/terms-and-disclaimer">शर्तें और अस्वीकरण</a>
+    <a class="footer-link" href="/hi/privacy-policy">गोपनीयता नीति</a>
+  </div>
+  <p>© 2026 SMM Panel Info — सर्वाधिकार सुरक्षित। स्वतंत्र और गैर-व्यावसायिक। सूचीबद्ध किसी भी SMM पैनल, सेवा या प्रदाता से संबद्ध नहीं।</p>
+</footer>
+
+<script>
+  function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    el.closest('.faq').querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    el.closest('.faq').querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    if (!isOpen) {
+      el.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>

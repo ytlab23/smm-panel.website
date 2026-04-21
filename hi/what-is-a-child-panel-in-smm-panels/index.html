@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+<title>SMM पैनल में Child Panel क्या है? | SMM Panel Info</title>
+<meta name="description" content="जानें कि Child Panel कैसे API-कनेक्टेड व्हाइट-लेबल स्टोरफ्रंट के रूप में काम करते हैं और रीसेलर्स को तुरंत अपना व्यवसाय शुरू करने देते हैं।">
+<link rel="canonical" href="https://smmpanelinfo.com/hi/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="en" href="https://smmpanelinfo.com/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="zh" href="https://smmpanelinfo.com/zh/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="es" href="https://smmpanelinfo.com/es/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="hi" href="https://smmpanelinfo.com/hi/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="ar" href="https://smmpanelinfo.com/ar/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="pt" href="https://smmpanelinfo.com/pt/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="bn" href="https://smmpanelinfo.com/bn/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="ru" href="https://smmpanelinfo.com/ru/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="ja" href="https://smmpanelinfo.com/ja/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="de" href="https://smmpanelinfo.com/de/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="fr" href="https://smmpanelinfo.com/fr/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="ko" href="https://smmpanelinfo.com/ko/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="it" href="https://smmpanelinfo.com/it/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="tr" href="https://smmpanelinfo.com/tr/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="id" href="https://smmpanelinfo.com/id/what-is-a-child-panel-in-smm-panels">
+<link rel="alternate" hreflang="x-default" href="https://smmpanelinfo.com/what-is-a-child-panel-in-smm-panels">
+<meta name="application-name" content="SMM Panel Info">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SMM Panel Info">
+<meta property="og:locale" content="hi">
+<meta property="og:title" content="SMM पैनल में Child Panel क्या है? | SMM Panel Info">
+<meta property="og:description" content="जानें कि Child Panel कैसे API-कनेक्टेड व्हाइट-लेबल स्टोरफ्रंट के रूप में काम करते हैं और रीसेलर्स को तुरंत अपना व्यवसाय शुरू करने देते हैं।">
+<meta property="og:url" content="https://smmpanelinfo.com/hi/what-is-a-child-panel-in-smm-panels">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SMM पैनल में Child Panel क्या है? | SMM Panel Info">
+<meta name="twitter:description" content="जानें कि Child Panel कैसे API-कनेक्टेड व्हाइट-लेबल स्टोरफ्रंट के रूप में काम करते हैं और रीसेलर्स को तुरंत अपना व्यवसाय शुरू करने देते हैं।">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Epilogue:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  /* ── CORE RESET & VARIABLES ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --stripe: #f4f4f5;
+    --display: 'Cormorant Garamond', Georgia, serif;
+    --body: 'Epilogue', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── PAGE STATES & ANIMATIONS ── */
+  .page { display: none; }
+  .page.active { display: block; }
+  
+  .page.active .animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .delay-1 { animation-delay: 0.05s; }
+  .delay-2 { animation-delay: 0.10s; }
+  .delay-3 { animation-delay: 0.15s; }
+  .delay-4 { animation-delay: 0.20s; }
+
+  /* ── HEADER & NAVIGATION ── */
+  .site-header {
+    padding: 32px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  }
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+  }
+  .nav-logo {
+    font-family: var(--body);
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .header-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .header-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .header-link:hover { opacity: 0.5; }
+  .nav-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--black);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 40px;
+  }
+
+  /* ── LANGUAGE SWITCHER ── */
+  .header-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .lang-switch { position: relative; }
+  .lang-switch > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--black);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    transition: border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .lang-switch > summary:hover { border-color: rgba(0, 0, 0, 0.45); }
+  .lang-switch[open] > summary { border-color: rgba(0, 0, 0, 0.45); background: var(--stripe); }
+  .lang-switch > summary::-webkit-details-marker { display: none; }
+  .lang-switch > summary::marker { content: ''; }
+  .lang-caret { font-size: 0.6rem; opacity: 0.6; }
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    min-width: 190px;
+    max-height: 65vh;
+    overflow-y: auto;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    padding: 6px 0;
+    z-index: 101;
+  }
+  html[dir="rtl"] .lang-menu { right: auto; left: 0; }
+  .lang-item {
+    display: block;
+    padding: 9px 18px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.88rem;
+    line-height: 1.3;
+    transition: background 0.15s;
+  }
+  .lang-item:hover { background: var(--stripe); }
+  .lang-item.active { font-weight: 700; background: var(--stripe); }
+
+  /* ── LAYOUT CONTAINERS ── */
+  .container { max-width: 860px; margin: 0 auto; padding: 0 5vw; }
+
+  /* ── HOME HERO & INFO ── */
+  .home-hero {
+    padding: 100px 5vw 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home-hero-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 24px;
+    opacity: 0.5;
+  }
+  .home-hero h1 {
+    font-family: var(--display);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+  .home-hero p {
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  .home-info-section {
+    max-width: 860px;
+    margin: 0 auto 80px;
+    padding: 60px 48px;
+    background: var(--stripe);
+    text-align: left;
+  }
+  .home-info-section h2 {
+    font-family: var(--display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .home-info-section p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  .home-info-section p:last-child { margin-bottom: 0; }
+
+  /* ── GRID SECTION ── */
+  .grid-section { padding: 40px 5vw 120px; max-width: 1200px; margin: 0 auto; }
+  .grid-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.4;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    border: 3px solid var(--black);
+    padding: 40px 32px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover { 
+    background: var(--black); 
+    color: var(--white); 
+    transform: translateY(-8px); 
+  }
+  .card-num {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    opacity: 0.4;
+    margin-bottom: 24px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+  }
+  .card:hover .card-num { opacity: 0.7; color: var(--white); }
+  .card:hover .card-title { color: var(--white); }
+  .card-title {
+    font-family: var(--display);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  .card-arrow {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .card:hover .card-arrow { opacity: 1; transform: translate(4px, -4px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 100px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .footer-logo {
+    font-family: var(--body);
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-link {
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .footer-link:hover { opacity: 1; }
+  footer p { font-size: 0.85rem; opacity: 0.4; font-weight: 400; max-width: 500px; margin: 0; }
+
+  /* ── INNER PAGE NAVIGATION ── */
+  .inner-nav {
+    padding: 60px 5vw 40px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .back-link {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--stripe);
+    border-radius: 40px;
+    transition: background 0.2s;
+  }
+  .back-link:hover { background: #e4e4e5; }
+
+  /* ── ARTICLE TYPOGRAPHY & LAYOUT ── */
+  .page-header { padding: 0 5vw 40px; max-width: 860px; margin: 0 auto; }
+  .page-num { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.4; margin-bottom: 24px; font-weight: 600; }
+  .page-header h1 {
+    font-family: var(--display);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .page-body { padding: 0 5vw 100px; max-width: 860px; margin: 0 auto; }
+  .page-body h2 {
+    font-family: var(--display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 80px 0 32px;
+    letter-spacing: -0.01em;
+  }
+  .page-body h3 {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 48px 0 20px;
+  }
+  .page-body p { margin-bottom: 24px; font-size: 1.1rem; color: #1a1a1a; }
+  .page-body a { color: var(--black); font-weight: 700; text-decoration: none; transition: opacity 0.2s; cursor: pointer; }
+  .page-body a:hover { opacity: 0.5; }
+  .page-body strong { font-weight: 700; }
+
+  /* ── DYNAMIC CONTENT BLOCKS ── */
+  .tldr {
+    background: var(--black);
+    color: var(--white);
+    padding: 48px;
+    margin-bottom: 64px;
+  }
+  .tldr-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 16px;
+    opacity: 0.5;
+    color: var(--white);
+  }
+  .tldr p { font-size: 1.15rem; line-height: 1.75; margin: 0; color: var(--white); }
+  .tldr a { color: var(--white) !important; font-weight: 700; }
+
+  .example {
+    padding: 40px 48px;
+    margin: 48px 0;
+    background: var(--stripe);
+  }
+  .example-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-bottom: 16px;
+  }
+  .example p { margin: 0; font-size: 1.05rem; }
+
+  /* ── LISTS & TABLES ── */
+  .page-body ul, .page-body ol { margin: 32px 0 40px 24px; }
+  .page-body li { margin-bottom: 16px; font-size: 1.1rem; }
+
+  .table-wrap { overflow-x: auto; margin: 48px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+  th {
+    background: var(--black);
+    color: var(--white);
+    padding: 24px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  td { padding: 20px 24px; vertical-align: top; border: 4px solid var(--white); }
+  tr:nth-child(odd) td { background: var(--stripe); }
+  tr:nth-child(even) td { background: #eaeaea; }
+
+  /* ── FAQ ACCORDION ── */
+  .faq { margin: 80px 0; }
+  .faq-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.4;
+    margin-bottom: 32px;
+  }
+  .faq-item { background: var(--stripe); margin-bottom: 16px; padding: 32px; transition: background 0.2s; }
+  .faq-item:hover { background: #e9e9e9; }
+  .faq-q {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+  }
+  .faq-q::after { content: '+'; font-size: 1.5rem; font-weight: 400; flex-shrink: 0; opacity: 0.4; }
+  .faq-q.open::after { content: '−'; }
+  .faq-a { font-size: 1.05rem; display: none; margin-top: 24px; opacity: 0.8; line-height: 1.8; }
+  .faq-a.open { display: block; animation: fadeUp 0.3s ease; }
+
+  /* ── RELATED TOPICS ── */
+  .related { 
+    margin-top: 100px; 
+    padding: 64px 48px; 
+    background: var(--black); 
+    color: var(--white); 
+  }
+  .related-label { 
+    font-size: 0.75rem; 
+    letter-spacing: 0.15em; 
+    text-transform: uppercase; 
+    font-weight: 600; 
+    opacity: 0.5; 
+    margin-bottom: 32px; 
+    color: var(--white);
+  }
+  .related-links { display: flex; flex-direction: column; gap: 16px; }
+  
+  .page-body .related a.related-link {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: opacity 0.15s;
+    opacity: 0.8;
+  }
+  .page-body .related a.related-link:hover { 
+    opacity: 1; 
+    text-decoration: underline; 
+    text-underline-offset: 4px; 
+    color: var(--white); 
+  }
+  .page-body .related a.related-link::before { 
+    content: '→'; 
+    font-family: var(--body); 
+    font-weight: 300; 
+    opacity: 0.5; 
+    color: var(--white); 
+    text-decoration: none; 
+    display: inline-block; 
+  }
+
+  /* ── NUMBERED STEPS ── */
+  .steps { margin: 64px 0; counter-reset: step; }
+  .step { counter-increment: step; margin-bottom: 48px; padding-left: 80px; position: relative; }
+  .step::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-family: var(--display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.1;
+  }
+  .step h3 { margin-top: 0; font-size: 1.3rem; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .home-hero h1 { font-size: 3.2rem; }
+    .tldr, .example, .related, .faq-item { padding: 32px 24px; }
+    .home-info-section { padding: 48px 24px; }
+    .header-links { display: none; }
+    .header-right { gap: 0; }
+    .step { padding-left: 60px; }
+    .step::before { font-size: 1.8rem; }
+    .lang-menu { min-width: 170px; max-height: 55vh; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo-wrap" href="/hi/" style="text-decoration:none;color:inherit;">
+    <img src="/favicon.svg" alt="SMM Panel Info Icon" width="28" height="28" style="object-fit: contain;">
+    <span class="nav-logo">SMM Panel Info</span>
+  </a>
+  <div class="header-right">
+    <div class="header-links">
+      <a class="header-link" href="/hi/about">हमारे बारे में</a>
+      <a class="header-link" href="/hi/contact">संपर्क करें</a>
+      <span class="nav-tag">स्वतंत्र स्रोत</span>
+    </div>
+    <details class="lang-switch">
+      <summary aria-label="Change language">HI<span class="lang-caret" aria-hidden="true">&#9662;</span></summary>
+      <div class="lang-menu" role="menu">
+      <a class="lang-item" href="/what-is-a-child-panel-in-smm-panels" hreflang="en" lang="en" dir="ltr">English</a>
+      <a class="lang-item" href="/zh/what-is-a-child-panel-in-smm-panels" hreflang="zh" lang="zh" dir="ltr">中文</a>
+      <a class="lang-item" href="/es/what-is-a-child-panel-in-smm-panels" hreflang="es" lang="es" dir="ltr">Español</a>
+      <a class="lang-item active" href="/hi/what-is-a-child-panel-in-smm-panels" hreflang="hi" lang="hi" dir="ltr">हिन्दी</a>
+      <a class="lang-item" href="/ar/what-is-a-child-panel-in-smm-panels" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+      <a class="lang-item" href="/pt/what-is-a-child-panel-in-smm-panels" hreflang="pt" lang="pt" dir="ltr">Português</a>
+      <a class="lang-item" href="/bn/what-is-a-child-panel-in-smm-panels" hreflang="bn" lang="bn" dir="ltr">বাংলা</a>
+      <a class="lang-item" href="/ru/what-is-a-child-panel-in-smm-panels" hreflang="ru" lang="ru" dir="ltr">Русский</a>
+      <a class="lang-item" href="/ja/what-is-a-child-panel-in-smm-panels" hreflang="ja" lang="ja" dir="ltr">日本語</a>
+      <a class="lang-item" href="/de/what-is-a-child-panel-in-smm-panels" hreflang="de" lang="de" dir="ltr">Deutsch</a>
+      <a class="lang-item" href="/fr/what-is-a-child-panel-in-smm-panels" hreflang="fr" lang="fr" dir="ltr">Français</a>
+      <a class="lang-item" href="/ko/what-is-a-child-panel-in-smm-panels" hreflang="ko" lang="ko" dir="ltr">한국어</a>
+      <a class="lang-item" href="/it/what-is-a-child-panel-in-smm-panels" hreflang="it" lang="it" dir="ltr">Italiano</a>
+      <a class="lang-item" href="/tr/what-is-a-child-panel-in-smm-panels" hreflang="tr" lang="tr" dir="ltr">Türkçe</a>
+      <a class="lang-item" href="/id/what-is-a-child-panel-in-smm-panels" hreflang="id" lang="id" dir="ltr">Bahasa Indonesia</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<div id="p14" class="page active" data-title="What Is a Child Panel in SMM Panels? | SMM Panel Info" data-description="Understand how child panels function as API-connected white-label storefronts for SMM resellers to instantly launch their own businesses." data-slug="what-is-a-child-panel-in-smm-panels">
+  <div class="inner-nav animate-up delay-1"><a class="back-link" href="/hi/">← होम</a></div>
+  <div class="page-header animate-up delay-2">
+    <p class="page-num">विषय 14</p>
+    <h1>SMM Panels में Child Panel क्या है?</h1>
+  </div>
+  <div class="page-body animate-up delay-3">
+    <div class="tldr">
+      <div class="tldr-label">TL;DR</div>
+      <p>Child panel एक turnkey, white-label storefront है जो seamlessly एक मुख्य "parent" panel से जुड़ा होता है। यह उद्यमियों को तुरंत अपना branded SMM व्यवसाय लॉन्च करने की अनुमति देता है, जिसमें parent panel पर्दे के पीछे सभी API routing और service execution संभालता है।</p>
+    </div>
+
+    <p>"Child Panel" शब्द SMM reseller उद्योग में सबसे आसान entry point का प्रतिनिधित्व करता है। एक standalone <a href="/hi/smm-panel-script-what-is-it">script</a> खरीदने, hosting सुरक्षित करने और manually API endpoints configure करने के बजाय, आप simply एक <a href="/hi/who-is-the-main-smm-panel-provider">major provider</a> से directly एक ready-made panel किराए पर लेते हैं।</p>
+
+    <p>कई विशाल, स्थापित panels इसे एक built-in feature के रूप में प्रदान करते हैं। एक nominal monthly fee (आमतौर पर $10 और $25 के बीच) के लिए, मुख्य panel आपके अपने custom domain name पर hosted एक completely separate, functioning website spin up करेगा।</p>
+
+    <h2>Child Panel की Mechanics</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>परिचालन परत</th><th>कौन नियंत्रित करता है?</th><th>विवरण</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Branding &amp; Domain</strong></td><td>आप (Child)</td><td>आप logo, colors, domain name और site copy सेट करते हैं।</td></tr>
+          <tr><td><strong>Retail Pricing</strong></td><td>आप (Child)</td><td>आप exact markup और profit margins define करते हैं।</td></tr>
+          <tr><td><strong>Customer Payments</strong></td><td>आप (Child)</td><td>आपके users सीधे आपके Stripe या Crypto wallets में pay करते हैं।</td></tr>
+          <tr><td><strong>Service Inventory</strong></td><td>Parent Panel</td><td>आप exclusively parent के catalog से बेचने के लिए hardcoded हैं।</td></tr>
+          <tr><td><strong>Order Execution</strong></td><td>Parent Panel</td><td>Automated API sync; parent के servers actual delivery perform करते हैं।</td></tr>
+          <tr><td><strong>Hosting &amp; Uptime</strong></td><td>Parent Panel</td><td>वे servers, SSL और software updates maintain करते हैं।</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>महत्वपूर्ण सीमा: API Lock-In</h2>
+    <p>Child panel का प्राथमिक लाभ—इसका frictionless, instant setup—इसकी सबसे बड़ी सीमा भी है। Child panel मौलिक रूप से प्रतिबंधित है। यह system architecture के माध्यम से hardcoded है कि यह <em>केवल</em> उस specific parent panel से सेवाएं source करे जिसने इसे provide किया।</p>
+    <p>यदि आपके पास एक independent, self-hosted script है, तो आप Instagram के लिए Provider A, YouTube के लिए Provider B और Telegram के लिए Provider C connect कर सकते हैं। Child panel यह नहीं कर सकता। आप पूरी तरह से parent panel की pricing, service quality और uptime पर निर्भर हैं।</p>
+
+    <div class="faq">
+      <div class="faq-label">अक्सर पूछे जाने वाले प्रश्न</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">क्या मेरे customers को पता चलेगा कि मैं child panel हूं?</div>
+        <div class="faq-a">नहीं। Child panels 100% white-labeled हैं। आपके customers केवल आपका domain, आपका logo और आपका support system देखेंगे। उन्हें API routing या पर्दे के पीछे काम कर रहे parent panel की कोई visibility नहीं होगी।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">क्या मैं बाद में child panel को independent script पर migrate कर सकता हूं?</div>
+        <div class="faq-a">हाँ, लेकिन इसके लिए प्रयास की आवश्यकता है। आपको एक independent script खरीदनी होगी, इसे अपने hosting पर set up करना होगा और फिर अपना user database migrate करना होगा। पहले जांचें कि क्या आपका parent panel आपको अपना user और order data export करने की अनुमति देता है।</div>
+      </div>
+    </div>
+
+    <div class="related">
+      <div class="related-label">संबंधित विषय</div>
+      <div class="related-links">
+        <a class="related-link" href="/hi/how-to-start-an-smm-panel-business">SMM Panel व्यवसाय कैसे शुरू करें</a>
+        <a class="related-link" href="/hi/smm-panel-script-what-is-it">SMM Panel Script: यह क्या है?</a>
+        <a class="related-link" href="/hi/who-is-the-main-smm-panel-provider">मुख्य SMM Panel प्रदाता कौन है?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <img src="/favicon.svg" alt="SMM Panel Info Icon" width="32" height="32" style="object-fit: contain;">
+    SMM Panel Info
+  </div>
+  <div class="footer-nav">
+    <a class="footer-link" href="/hi/about">हमारे बारे में</a>
+    <a class="footer-link" href="/hi/contact">संपर्क करें</a>
+    <a class="footer-link" href="/hi/terms-and-disclaimer">शर्तें और अस्वीकरण</a>
+    <a class="footer-link" href="/hi/privacy-policy">गोपनीयता नीति</a>
+  </div>
+  <p>© 2026 SMM Panel Info — सर्वाधिकार सुरक्षित। स्वतंत्र और गैर-व्यावसायिक। सूचीबद्ध किसी भी SMM पैनल, सेवा या प्रदाता से संबद्ध नहीं।</p>
+</footer>
+
+<script>
+  function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    el.closest('.faq').querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    el.closest('.faq').querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    if (!isOpen) {
+      el.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>

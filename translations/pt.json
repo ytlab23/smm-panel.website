@@ -1,0 +1,126 @@
+{
+  "lang_name": "Português",
+  "pages": {
+    "home": {
+      "title": "SMM Panel Info — Recurso Independente sobre Painéis SMM",
+      "description": "Um recurso gratuito e independente que detalha como os painéis SMM operam, quem os utiliza e como navegar este enorme ecossistema digital com segurança."
+    },
+    "p1": {
+      "title": "O que é um Painel SMM? | SMM Panel Info",
+      "description": "Saiba o que é um painel SMM, como funciona o ecossistema atacadista de marketing de mídia social e quem utiliza esses serviços de crescimento digital."
+    },
+    "p2": {
+      "title": "É seguro usar um Painel SMM? | SMM Panel Info",
+      "description": "Entenda os riscos associados aos painéis SMM, de suspensões de contas a fraudes de pagamento, e aprenda a navegar o mercado com segurança."
+    },
+    "p3": {
+      "title": "Como iniciar um negócio de Painel SMM | SMM Panel Info",
+      "description": "Um guia passo a passo para lançar seu próprio negócio lucrativo de revenda de painéis SMM, adquirir scripts e encontrar fornecedores API atacadistas."
+    },
+    "p4": {
+      "title": "Script de Painel SMM: o que é? | SMM Panel Info",
+      "description": "Descubra o que é um script de painel SMM, a diferença entre SaaS e auto-hospedado, e por que os scripts são essenciais para automação."
+    },
+    "p5": {
+      "title": "O que significa Refill nos Painéis SMM? | SMM Panel Info",
+      "description": "Entenda o conceito de refills, garantias e quedas de métricas dentro do ecossistema de painéis de marketing de mídia social."
+    },
+    "p6": {
+      "title": "O que significa Drip-Feed nos Painéis SMM? | SMM Panel Info",
+      "description": "Saiba como o ritmo drip-feed num painel SMM simula crescimento orgânico e evita que algoritmos sinalizem sua conta."
+    },
+    "p7": {
+      "title": "Como adicionar fundos a um Painel SMM | SMM Panel Info",
+      "description": "Um guia sobre o sistema de carteira pré-paga usado pelos painéis SMM, incluindo processadores de pagamento cripto, Stripe e PayPal."
+    },
+    "p8": {
+      "title": "Prós e Contras de usar um Painel SMM | SMM Panel Info",
+      "description": "Uma visão honesta das vantagens de preços atacadistas SMM frente aos riscos inerentes e dilemas éticos do engajamento artificial."
+    },
+    "p9": {
+      "title": "Painéis SMM mais seguros e confiáveis (Pesquisa 2026) | SMM Panel Info",
+      "description": "Uma análise orientada por dados dos melhores painéis SMM em 2026 com base em avaliações independentes do Trustpilot, diretórios e sentimento da comunidade."
+    },
+    "p10": {
+      "title": "Como encontrar e comparar Painéis SMM | SMM Panel Info",
+      "description": "Aprenda o método sistemático para avaliar um painel SMM usando diretórios agregadores, avaliações de fóruns e pedidos de teste API controlados."
+    },
+    "p11": {
+      "title": "Como evitar golpes ao usar um Painel SMM | SMM Panel Info",
+      "description": "Um panorama dos golpes exit mais comuns em painéis SMM, tentativas de phishing e sinais de alerta antes de depositar fundos."
+    },
+    "p12": {
+      "title": "Quem é o principal provedor de Painéis SMM? | SMM Panel Info",
+      "description": "Explore a cadeia de suprimentos da indústria SMM e descubra os provedores raiz verificados para Instagram, YouTube e Telegram."
+    },
+    "p13": {
+      "title": "Qual é o melhor Painel SMM? | SMM Panel Info",
+      "description": "Um panorama dos melhores painéis SMM categorizados por caso de uso, destacando o top 10 para agências e revendedores."
+    },
+    "p14": {
+      "title": "O que é um Child Panel nos Painéis SMM? | SMM Panel Info",
+      "description": "Entenda como child panels funcionam como vitrines API white-label para que revendedores SMM lancem seus negócios instantaneamente."
+    },
+    "about": {
+      "title": "Sobre | SMM Panel Info",
+      "description": "Conheça nossa missão de desmistificar a indústria SMM e fornecer pesquisa de mercado imparcial e independente sobre serviços de crescimento digital."
+    },
+    "contact": {
+      "title": "Contato | SMM Panel Info",
+      "description": "Entre em contato com a equipe do SMM Panel Info para consultas, dados de pesquisa ou denúncias de golpes."
+    },
+    "terms": {
+      "title": "Termos e Aviso Legal | SMM Panel Info",
+      "description": "Leia nossos termos de serviço e isenções de responsabilidade sobre o uso educativo das informações de painéis SMM."
+    },
+    "privacy": {
+      "title": "Política de Privacidade | SMM Panel Info",
+      "description": "Entenda como o SMM Panel Info lida com coleta de dados, analytics e cookies do navegador."
+    }
+  },
+  "strings": {
+    ">About</a>": ">Sobre</a>",
+    ">Contact</a>": ">Contato</a>",
+    ">Independent Resource</span>": ">Recurso Independente</span>",
+    ">Terms &amp; Disclaimer</a>": ">Termos e Aviso Legal</a>",
+    ">Privacy Policy</a>": ">Política de Privacidade</a>",
+    ">← Home</a>": ">← Início</a>",
+    ">Related Topics</div>": ">Tópicos relacionados</div>",
+    ">Topic 01</p>": ">Tópico 01</p>",
+    ">Topic 02</p>": ">Tópico 02</p>",
+    ">Topic 03</p>": ">Tópico 03</p>",
+    ">Topic 04</p>": ">Tópico 04</p>",
+    ">Topic 05</p>": ">Tópico 05</p>",
+    ">Topic 06</p>": ">Tópico 06</p>",
+    ">Topic 07</p>": ">Tópico 07</p>",
+    ">Topic 08</p>": ">Tópico 08</p>",
+    ">Topic 09</p>": ">Tópico 09</p>",
+    ">Topic 10</p>": ">Tópico 10</p>",
+    ">Topic 11</p>": ">Tópico 11</p>",
+    ">Topic 12</p>": ">Tópico 12</p>",
+    ">Topic 13</p>": ">Tópico 13</p>",
+    ">Topic 14</p>": ">Tópico 14</p>",
+    ">Information</p>": ">Informação</p>",
+    ">Legal</p>": ">Legal</p>",
+    "Est. 2026 &nbsp;·&nbsp; Free &nbsp;·&nbsp; Independent": "Desde 2026 &nbsp;·&nbsp; Gratuito &nbsp;·&nbsp; Independente",
+    "Everything About<br>SMM Panels.": "Tudo sobre os<br>Painéis SMM.",
+    "A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.": "Um recurso gratuito e independente que detalha como os painéis SMM operam, quem os utiliza e como navegar este enorme ecossistema digital com segurança.",
+    ">Demystifying the SMM Ecosystem</h2>": ">Desmistificando o Ecossistema SMM</h2>",
+    "14 Core Topics &nbsp;·&nbsp; Select to explore": "14 tópicos principais &nbsp;·&nbsp; Selecione para explorar",
+    ">What Is an SMM Panel?</div>": ">O que é um Painel SMM?</div>",
+    ">Is It Safe to Use an SMM Panel?</div>": ">É seguro usar um Painel SMM?</div>",
+    ">How to Start an SMM Panel Business</div>": ">Como iniciar um negócio de Painel SMM</div>",
+    ">SMM Panel Script: What Is It?</div>": ">Script de Painel SMM: o que é?</div>",
+    ">What Does &quot;Refill&quot; Mean?</div>": ">O que significa &quot;Refill&quot;?</div>",
+    ">What Does &quot;Drip-Feed&quot; Mean?</div>": ">O que significa &quot;Drip-Feed&quot;?</div>",
+    ">How to Add Funds in an SMM Panel</div>": ">Como adicionar fundos a um Painel SMM</div>",
+    ">Pros &amp; Cons of Using an SMM Panel</div>": ">Prós e Contras de usar um Painel SMM</div>",
+    ">Safest &amp; Most Trusted SMM Panels (2026)</div>": ">Painéis SMM mais seguros e confiáveis (2026)</div>",
+    ">How to Find and Compare SMM Panels</div>": ">Como encontrar e comparar Painéis SMM</div>",
+    ">How to Avoid Scams</div>": ">Como evitar golpes</div>",
+    ">Who Is the Main SMM Panel Provider?</div>": ">Quem é o principal provedor de Painéis SMM?</div>",
+    ">Which SMM Panel Is Best?</div>": ">Qual é o melhor Painel SMM?</div>",
+    ">What Is a Child Panel?</div>": ">O que é um Child Panel?</div>",
+    "© 2026 SMM Panel Info — All rights reserved. Independent &amp; non-commercial. Not affiliated with any SMM panel, service, or provider listed.": "© 2026 SMM Panel Info — Todos os direitos reservados. Independente e não comercial. Não afiliado a nenhum painel SMM, serviço ou provedor listado."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "lang_name": "한국어",
+  "pages": {
+    "home": {
+      "title": "SMM Panel Info — SMM 패널 독립 리소스",
+      "description": "SMM 패널의 작동 방식, 사용자, 그리고 거대한 디지털 생태계를 안전하게 탐색하는 방법을 설명하는 무료 독립 자료입니다."
+    },
+    "p1": {
+      "title": "SMM 패널이란 무엇인가? | SMM Panel Info",
+      "description": "SMM 패널이 무엇인지, 도매 소셜미디어 마케팅 생태계가 어떻게 작동하는지, 누가 이 디지털 성장 서비스를 이용하는지 알아보세요."
+    },
+    "p2": {
+      "title": "SMM 패널 사용은 안전한가? | SMM Panel Info",
+      "description": "계정 정지부터 결제 사기까지 SMM 패널의 위험을 이해하고 시장을 안전하게 탐색하는 방법을 배우세요."
+    },
+    "p3": {
+      "title": "SMM 패널 사업 시작하는 방법 | SMM Panel Info",
+      "description": "자체 수익 가능한 SMM 패널 리셀러 사업을 시작하고, 스크립트를 구매하며, 도매 API 공급자를 확보하는 단계별 가이드."
+    },
+    "p4": {
+      "title": "SMM 패널 스크립트란? | SMM Panel Info",
+      "description": "SMM 패널 스크립트가 무엇인지, SaaS와 셀프 호스팅의 차이, 자동화에 있어 스크립트의 중요성을 소개합니다."
+    },
+    "p5": {
+      "title": "SMM 패널의 Refill이란? | SMM Panel Info",
+      "description": "소셜미디어 마케팅 패널 생태계의 refill, 보증, 지표 감소 개념을 이해하세요."
+    },
+    "p6": {
+      "title": "SMM 패널의 Drip-Feed란? | SMM Panel Info",
+      "description": "SMM 패널의 drip-feed 페이싱이 유기적 성장을 시뮬레이션하고 알고리즘의 감지를 피하는 방식을 알아보세요."
+    },
+    "p7": {
+      "title": "SMM 패널에 자금 추가하는 방법 | SMM Panel Info",
+      "description": "암호화폐, Stripe, PayPal 등 SMM 패널의 선불 지갑 시스템 가이드."
+    },
+    "p8": {
+      "title": "SMM 패널 사용의 장단점 | SMM Panel Info",
+      "description": "SMM 도매 가격의 장점과 인공 참여가 가져오는 위험·윤리적 단점을 솔직하게 살펴봅니다."
+    },
+    "p9": {
+      "title": "가장 안전하고 신뢰할 수 있는 SMM 패널 (2026 시장 조사) | SMM Panel Info",
+      "description": "Trustpilot 독립 리뷰, 디렉터리 순위, 커뮤니티 평가 기반 2026 최고 SMM 패널 데이터 분석."
+    },
+    "p10": {
+      "title": "SMM 패널 찾고 비교하는 방법 | SMM Panel Info",
+      "description": "집계 디렉터리, 포럼 리뷰, 통제된 API 테스트 주문으로 SMM 패널을 체계적으로 평가하는 방법."
+    },
+    "p11": {
+      "title": "SMM 패널 사기 방지 방법 | SMM Panel Info",
+      "description": "SMM 패널의 대표적 exit 사기, 피싱 시도, 자금 입금 전 주의해야 할 경고 신호 요약."
+    },
+    "p12": {
+      "title": "주요 SMM 패널 공급자는 누구? | SMM Panel Info",
+      "description": "SMM 산업의 공급망을 살펴보고 Instagram, YouTube, Telegram의 검증된 1차 공급자를 소개합니다."
+    },
+    "p13": {
+      "title": "어떤 SMM 패널이 최고인가? | SMM Panel Info",
+      "description": "사용 사례별 최고의 SMM 패널과 대행사·리셀러를 위한 Top 10을 소개합니다."
+    },
+    "p14": {
+      "title": "SMM 패널의 Child Panel이란? | SMM Panel Info",
+      "description": "Child Panel이 리셀러를 위한 API 연결 화이트라벨 스토어프론트로서 즉시 사업을 시작하도록 돕는 방식을 설명합니다."
+    },
+    "about": {
+      "title": "소개 | SMM Panel Info",
+      "description": "SMM 산업을 투명하게 하고, 디지털 성장 서비스에 대한 독립적·공정한 시장 조사를 제공하는 저희의 미션을 소개합니다."
+    },
+    "contact": {
+      "title": "문의하기 | SMM Panel Info",
+      "description": "문의, 연구 데이터 또는 사기 신고는 SMM Panel Info 팀으로 연락해 주세요."
+    },
+    "terms": {
+      "title": "이용약관 및 면책조항 | SMM Panel Info",
+      "description": "SMM 패널 정보의 교육적 이용에 관한 이용약관 및 면책조항을 확인하세요."
+    },
+    "privacy": {
+      "title": "개인정보 처리방침 | SMM Panel Info",
+      "description": "SMM Panel Info가 데이터 수집, 분석, 브라우저 쿠키를 어떻게 처리하는지 알아보세요."
+    }
+  },
+  "strings": {
+    ">About</a>": ">소개</a>",
+    ">Contact</a>": ">문의하기</a>",
+    ">Independent Resource</span>": ">독립 리소스</span>",
+    ">Terms &amp; Disclaimer</a>": ">이용약관 및 면책조항</a>",
+    ">Privacy Policy</a>": ">개인정보 처리방침</a>",
+    ">← Home</a>": ">← 홈</a>",
+    ">Related Topics</div>": ">관련 주제</div>",
+    ">Topic 01</p>": ">주제 01</p>",
+    ">Topic 02</p>": ">주제 02</p>",
+    ">Topic 03</p>": ">주제 03</p>",
+    ">Topic 04</p>": ">주제 04</p>",
+    ">Topic 05</p>": ">주제 05</p>",
+    ">Topic 06</p>": ">주제 06</p>",
+    ">Topic 07</p>": ">주제 07</p>",
+    ">Topic 08</p>": ">주제 08</p>",
+    ">Topic 09</p>": ">주제 09</p>",
+    ">Topic 10</p>": ">주제 10</p>",
+    ">Topic 11</p>": ">주제 11</p>",
+    ">Topic 12</p>": ">주제 12</p>",
+    ">Topic 13</p>": ">주제 13</p>",
+    ">Topic 14</p>": ">주제 14</p>",
+    ">Information</p>": ">안내</p>",
+    ">Legal</p>": ">법적 고지</p>",
+    "Est. 2026 &nbsp;·&nbsp; Free &nbsp;·&nbsp; Independent": "설립 2026 &nbsp;·&nbsp; 무료 &nbsp;·&nbsp; 독립",
+    "Everything About<br>SMM Panels.": "SMM 패널에<br>관한 모든 것.",
+    "A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.": "SMM 패널의 작동 방식, 사용자, 그리고 거대한 디지털 생태계를 안전하게 탐색하는 방법을 설명하는 무료 독립 자료입니다.",
+    ">Demystifying the SMM Ecosystem</h2>": ">SMM 생태계 해부</h2>",
+    "14 Core Topics &nbsp;·&nbsp; Select to explore": "14개 핵심 주제 &nbsp;·&nbsp; 탐색할 항목을 선택하세요",
+    ">What Is an SMM Panel?</div>": ">SMM 패널이란 무엇인가?</div>",
+    ">Is It Safe to Use an SMM Panel?</div>": ">SMM 패널 사용은 안전한가?</div>",
+    ">How to Start an SMM Panel Business</div>": ">SMM 패널 사업 시작하는 방법</div>",
+    ">SMM Panel Script: What Is It?</div>": ">SMM 패널 스크립트란?</div>",
+    ">What Does &quot;Refill&quot; Mean?</div>": ">&quot;Refill&quot;이란 무엇인가?</div>",
+    ">What Does &quot;Drip-Feed&quot; Mean?</div>": ">&quot;Drip-Feed&quot;란 무엇인가?</div>",
+    ">How to Add Funds in an SMM Panel</div>": ">SMM 패널에 자금 추가하는 방법</div>",
+    ">Pros &amp; Cons of Using an SMM Panel</div>": ">SMM 패널 사용의 장단점</div>",
+    ">Safest &amp; Most Trusted SMM Panels (2026)</div>": ">가장 안전하고 신뢰할 수 있는 SMM 패널 (2026)</div>",
+    ">How to Find and Compare SMM Panels</div>": ">SMM 패널 찾고 비교하는 방법</div>",
+    ">How to Avoid Scams</div>": ">사기 방지 방법</div>",
+    ">Who Is the Main SMM Panel Provider?</div>": ">주요 SMM 패널 공급자는 누구?</div>",
+    ">Which SMM Panel Is Best?</div>": ">어떤 SMM 패널이 최고인가?</div>",
+    ">What Is a Child Panel?</div>": ">Child Panel이란?</div>",
+    "© 2026 SMM Panel Info — All rights reserved. Independent &amp; non-commercial. Not affiliated with any SMM panel, service, or provider listed.": "© 2026 SMM Panel Info — 모든 권리 보유. 독립적이고 비상업적입니다. 나열된 어떤 SMM 패널, 서비스 또는 공급자와도 관련이 없습니다."
+  }
+}

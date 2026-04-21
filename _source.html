@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SMM Panel — Independent SMM Panel Resource</title>
+<title>SMM Panel Info — Independent SMM Panel Resource</title>
 <meta name="description" content="A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/favicon.svg">
@@ -103,6 +103,64 @@
     border-radius: 40px;
   }
 
+  /* ── LANGUAGE SWITCHER ── */
+  .header-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .lang-switch { position: relative; }
+  .lang-switch > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 999px;
+    font-family: var(--body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--black);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    transition: border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .lang-switch > summary:hover { border-color: rgba(0, 0, 0, 0.45); }
+  .lang-switch[open] > summary { border-color: rgba(0, 0, 0, 0.45); background: var(--stripe); }
+  .lang-switch > summary::-webkit-details-marker { display: none; }
+  .lang-switch > summary::marker { content: ''; }
+  .lang-caret { font-size: 0.6rem; opacity: 0.6; }
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    min-width: 190px;
+    max-height: 65vh;
+    overflow-y: auto;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    padding: 6px 0;
+    z-index: 101;
+  }
+  html[dir="rtl"] .lang-menu { right: auto; left: 0; }
+  .lang-item {
+    display: block;
+    padding: 9px 18px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.88rem;
+    line-height: 1.3;
+    transition: background 0.15s;
+  }
+  .lang-item:hover { background: var(--stripe); }
+  .lang-item.active { font-weight: 700; background: var(--stripe); }
+
   /* ── LAYOUT CONTAINERS ── */
   .container { max-width: 860px; margin: 0 auto; padding: 0 5vw; }
 
@@ -201,7 +259,8 @@
     font-weight: 600;
     transition: opacity 0.2s;
   }
-  .card:hover .card-num { opacity: 0.7; }
+  .card:hover .card-num { opacity: 0.7; color: var(--white); }
+  .card:hover .card-title { color: var(--white); }
   .card-title {
     font-family: var(--display);
     font-size: 1.6rem;
@@ -464,8 +523,10 @@
     .tldr, .example, .related, .faq-item { padding: 32px 24px; }
     .home-info-section { padding: 48px 24px; }
     .header-links { display: none; }
+    .header-right { gap: 0; }
     .step { padding-left: 60px; }
     .step::before { font-size: 1.8rem; }
+    .lang-menu { min-width: 170px; max-height: 55vh; }
   }
 </style>
 </head>
@@ -473,17 +534,20 @@
 
 <header class="site-header">
   <div class="logo-wrap" onclick="showPage('home')">
-    <img src="/favicon.svg" alt="SMM Panel Icon" width="28" height="28" style="object-fit: contain;">
-    <span class="nav-logo">SMM Panel</span>
+    <img src="/favicon.svg" alt="SMM Panel Info Icon" width="28" height="28" style="object-fit: contain;">
+    <span class="nav-logo">SMM Panel Info</span>
   </div>
-  <div class="header-links">
-    <a class="header-link" href="/about" onclick="showPage('about')">About</a>
-    <a class="header-link" href="/contact" onclick="showPage('contact')">Contact</a>
-    <span class="nav-tag">Independent Resource</span>
+  <div class="header-right">
+    <div class="header-links">
+      <a class="header-link" href="/about" onclick="showPage('about')">About</a>
+      <a class="header-link" href="/contact" onclick="showPage('contact')">Contact</a>
+      <span class="nav-tag">Independent Resource</span>
+    </div>
+    <!-- LANG_SWITCHER -->
   </div>
 </header>
 
-<div id="home" class="page active" data-title="SMM Panel — Independent SMM Panel Resource" data-description="A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem." data-slug="">
+<div id="home" class="page active" data-title="SMM Panel Info — Independent SMM Panel Resource" data-description="A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem." data-slug="">
   <div class="home-hero animate-up delay-1">
     <p class="home-hero-label">Est. 2026 &nbsp;·&nbsp; Free &nbsp;·&nbsp; Independent</p>
     <h1>Everything About<br>SMM Panels.</h1>
@@ -493,7 +557,7 @@
   <div class="home-info-section animate-up delay-2">
     <h2>Demystifying the SMM Ecosystem</h2>
     <p>Social Media Marketing (SMM) panels operate in a vast, multi-million dollar grey-area industry. They power the follower counts of influencers, fuel the engagement metrics of marketing agencies, and jumpstart communities for modern brands. Yet, reliable, non-commercial information about them is notoriously difficult to find.</p>
-    <p>We built <strong>SMM Panel</strong> to fill that void. By breaking down the complex supply chains—from <a href="/who-is-the-main-smm-panel-provider" onclick="showPage('p12')">primary providers</a> to API-connected <a href="/what-is-a-child-panel-in-smm-panels" onclick="showPage('p14')">child panels</a>—we aim to educate users, protect buyers from <a href="/how-to-avoid-scams-when-using-an-smm-panel" onclick="showPage('p11')">prevalent scams</a>, and provide transparent insights into the mechanics of artificial social growth.</p>
+    <p>We built <strong>SMM Panel Info</strong> to fill that void. By breaking down the complex supply chains—from <a href="/who-is-the-main-smm-panel-provider" onclick="showPage('p12')">primary providers</a> to API-connected <a href="/what-is-a-child-panel-in-smm-panels" onclick="showPage('p14')">child panels</a>—we aim to educate users, protect buyers from <a href="/how-to-avoid-scams-when-using-an-smm-panel" onclick="showPage('p11')">prevalent scams</a>, and provide transparent insights into the mechanics of artificial social growth.</p>
   </div>
 
   <div class="grid-section animate-up delay-3">
@@ -517,7 +581,7 @@
   </div>
 </div>
 
-<div id="p1" class="page" data-title="What Is an SMM Panel? | SMM Panel" data-description="Learn what an SMM panel is, how the wholesale social media marketing ecosystem works, and who utilizes these digital growth services." data-slug="what-is-an-smm-panel">
+<div id="p1" class="page" data-title="What Is an SMM Panel? | SMM Panel Info" data-description="Learn what an SMM panel is, how the wholesale social media marketing ecosystem works, and who utilizes these digital growth services." data-slug="what-is-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 01</p>
@@ -584,7 +648,7 @@
   </div>
 </div>
 
-<div id="p2" class="page" data-title="Is It Safe to Use an SMM Panel? | SMM Panel" data-description="Understand the risks associated with SMM panels, from account suspensions to payment fraud, and learn how to safely navigate the market." data-slug="is-it-safe-to-use-an-smm-panel">
+<div id="p2" class="page" data-title="Is It Safe to Use an SMM Panel? | SMM Panel Info" data-description="Understand the risks associated with SMM panels, from account suspensions to payment fraud, and learn how to safely navigate the market." data-slug="is-it-safe-to-use-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 02</p>
@@ -643,7 +707,7 @@
   </div>
 </div>
 
-<div id="p3" class="page" data-title="How to Start an SMM Panel Business | SMM Panel" data-description="A step-by-step guide on how to launch your own profitable SMM panel reseller business, acquire scripts, and source wholesale API providers." data-slug="how-to-start-an-smm-panel-business">
+<div id="p3" class="page" data-title="How to Start an SMM Panel Business | SMM Panel Info" data-description="A step-by-step guide on how to launch your own profitable SMM panel reseller business, acquire scripts, and source wholesale API providers." data-slug="how-to-start-an-smm-panel-business">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 03</p>
@@ -716,7 +780,7 @@
   </div>
 </div>
 
-<div id="p4" class="page" data-title="SMM Panel Script: What Is It? | SMM Panel" data-description="Discover what an SMM panel script is, the difference between SaaS and self-hosted solutions, and why scripts are essential for automation." data-slug="smm-panel-script-what-is-it">
+<div id="p4" class="page" data-title="SMM Panel Script: What Is It? | SMM Panel Info" data-description="Discover what an SMM panel script is, the difference between SaaS and self-hosted solutions, and why scripts are essential for automation." data-slug="smm-panel-script-what-is-it">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 04</p>
@@ -778,7 +842,7 @@
   </div>
 </div>
 
-<div id="p5" class="page" data-title="What Does Refill Mean in SMM Panels? | SMM Panel" data-description="Understand the concept of refills, guarantees, and metric drop-offs within the social media marketing panel ecosystem." data-slug="what-does-refill-mean-in-smm-panels">
+<div id="p5" class="page" data-title="What Does Refill Mean in SMM Panels? | SMM Panel Info" data-description="Understand the concept of refills, guarantees, and metric drop-offs within the social media marketing panel ecosystem." data-slug="what-does-refill-mean-in-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 05</p>
@@ -835,7 +899,7 @@
   </div>
 </div>
 
-<div id="p6" class="page" data-title="What Does Drip-Feed Mean in SMM Panels? | SMM Panel" data-description="Learn how drip-feed pacing works on an SMM panel to simulate organic growth and prevent social media algorithms from flagging your account." data-slug="what-does-drip-feed-mean-in-smm-panels">
+<div id="p6" class="page" data-title="What Does Drip-Feed Mean in SMM Panels? | SMM Panel Info" data-description="Learn how drip-feed pacing works on an SMM panel to simulate organic growth and prevent social media algorithms from flagging your account." data-slug="what-does-drip-feed-mean-in-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 06</p>
@@ -890,7 +954,7 @@
   </div>
 </div>
 
-<div id="p7" class="page" data-title="How to Add Funds in an SMM Panel | SMM Panel" data-description="A guide to the prepaid wallet system used by SMM panels, including crypto, Stripe, and PayPal payment processors." data-slug="how-to-add-funds-in-an-smm-panel">
+<div id="p7" class="page" data-title="How to Add Funds in an SMM Panel | SMM Panel Info" data-description="A guide to the prepaid wallet system used by SMM panels, including crypto, Stripe, and PayPal payment processors." data-slug="how-to-add-funds-in-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 07</p>
@@ -948,7 +1012,7 @@
   </div>
 </div>
 
-<div id="p8" class="page" data-title="Pros & Cons of Using an SMM Panel | SMM Panel" data-description="An honest look at the advantages of bulk SMM pricing versus the inherent risks and ethical drawbacks of artificial social media engagement." data-slug="pros-and-cons-of-using-an-smm-panel">
+<div id="p8" class="page" data-title="Pros & Cons of Using an SMM Panel | SMM Panel Info" data-description="An honest look at the advantages of bulk SMM pricing versus the inherent risks and ethical drawbacks of artificial social media engagement." data-slug="pros-and-cons-of-using-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 08</p>
@@ -1003,7 +1067,7 @@
   </div>
 </div>
 
-<div id="p9" class="page" data-title="Safest & Most Trusted SMM Panels (Market Research 2026) | SMM Panel" data-description="A data-driven analysis of the top SMM panels in 2026 based on independent Trustpilot reviews, directory rankings, and community sentiment." data-slug="safest-and-most-trusted-smm-panels">
+<div id="p9" class="page" data-title="Safest & Most Trusted SMM Panels (Market Research 2026) | SMM Panel Info" data-description="A data-driven analysis of the top SMM panels in 2026 based on independent Trustpilot reviews, directory rankings, and community sentiment." data-slug="safest-and-most-trusted-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 09</p>
@@ -1044,7 +1108,7 @@
       <div class="faq-label">Frequently Asked Questions</div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Are these panels affiliated with this site?</div>
-        <div class="faq-a">No. SMM Panel is a radically independent, non-commercial educational resource. We utilize zero affiliate links, accept zero sponsorships, and receive no financial compensation for listing these panels. They are highlighted purely based on aggregated market sentiment.</div>
+        <div class="faq-a">No. SMM Panel Info is a radically independent, non-commercial educational resource. We utilize zero affiliate links, accept zero sponsorships, and receive no financial compensation for listing these panels. They are highlighted purely based on aggregated market sentiment.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Will these panels remain safe forever?</div>
@@ -1063,7 +1127,7 @@
   </div>
 </div>
 
-<div id="p10" class="page" data-title="How to Find and Compare SMM Panels | SMM Panel" data-description="Learn the systematic method for evaluating an SMM panel, using aggregator directories, forum reviews, and running controlled API test orders." data-slug="how-to-find-and-compare-smm-panels">
+<div id="p10" class="page" data-title="How to Find and Compare SMM Panels | SMM Panel Info" data-description="Learn the systematic method for evaluating an SMM panel, using aggregator directories, forum reviews, and running controlled API test orders." data-slug="how-to-find-and-compare-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 10</p>
@@ -1127,7 +1191,7 @@
   </div>
 </div>
 
-<div id="p11" class="page" data-title="How to Avoid Scams When Using an SMM Panel | SMM Panel" data-description="A breakdown of the most common SMM panel exit scams, phishing attempts, and red flags to look out for before depositing funds." data-slug="how-to-avoid-scams-when-using-an-smm-panel">
+<div id="p11" class="page" data-title="How to Avoid Scams When Using an SMM Panel | SMM Panel Info" data-description="A breakdown of the most common SMM panel exit scams, phishing attempts, and red flags to look out for before depositing funds." data-slug="how-to-avoid-scams-when-using-an-smm-panel">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 11</p>
@@ -1176,7 +1240,7 @@
   </div>
 </div>
 
-<div id="p12" class="page" data-title="Who Is the Main SMM Panel Provider? | SMM Panel" data-description="Explore the supply chain of the SMM industry and discover the verified root providers for platforms like Instagram, YouTube, and Telegram." data-slug="who-is-the-main-smm-panel-provider">
+<div id="p12" class="page" data-title="Who Is the Main SMM Panel Provider? | SMM Panel Info" data-description="Explore the supply chain of the SMM industry and discover the verified root providers for platforms like Instagram, YouTube, and Telegram." data-slug="who-is-the-main-smm-panel-provider">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 12</p>
@@ -1236,7 +1300,7 @@
   </div>
 </div>
 
-<div id="p13" class="page" data-title="Which SMM Panel Is Best? | SMM Panel" data-description="A breakdown of the best SMM panels categorized by use case, highlighting the top 10 choices for agencies and resellers." data-slug="which-smm-panel-is-best">
+<div id="p13" class="page" data-title="Which SMM Panel Is Best? | SMM Panel Info" data-description="A breakdown of the best SMM panels categorized by use case, highlighting the top 10 choices for agencies and resellers." data-slug="which-smm-panel-is-best">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 13</p>
@@ -1309,7 +1373,7 @@
   </div>
 </div>
 
-<div id="p14" class="page" data-title="What Is a Child Panel in SMM Panels? | SMM Panel" data-description="Understand how child panels function as API-connected white-label storefronts for SMM resellers to instantly launch their own businesses." data-slug="what-is-a-child-panel-in-smm-panels">
+<div id="p14" class="page" data-title="What Is a Child Panel in SMM Panels? | SMM Panel Info" data-description="Understand how child panels function as API-connected white-label storefronts for SMM resellers to instantly launch their own businesses." data-slug="what-is-a-child-panel-in-smm-panels">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Topic 14</p>
@@ -1367,7 +1431,7 @@
   </div>
 </div>
 
-<div id="about" class="page" data-title="About | SMM Panel" data-description="Learn about our mission to demystify the SMM industry and provide unbiased, independent market research on digital growth services." data-slug="about">
+<div id="about" class="page" data-title="About | SMM Panel Info" data-description="Learn about our mission to demystify the SMM industry and provide unbiased, independent market research on digital growth services." data-slug="about">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Information</p>
@@ -1375,7 +1439,7 @@
   </div>
   <div class="page-body animate-up delay-3">
     <h2>Demystifying the Industry</h2>
-    <p><strong>SMM Panel</strong> was created to serve as a clear, unbiased, and ad-free educational resource detailing the complex mechanics of the Social Media Marketing (SMM) panel ecosystem.</p>
+    <p><strong>SMM Panel Info</strong> was created to serve as a clear, unbiased, and ad-free educational resource detailing the complex mechanics of the Social Media Marketing (SMM) panel ecosystem.</p>
     <p>The SMM industry operates largely in the shadows. It is an unregulated, highly lucrative digital grey market where information asymmetry heavily favors the sellers. We realized there was no centralized repository of truth explaining how API reselling actually works, how to detect prevalent hit-and-run scams, or how to identify genuine primary providers.</p>
     
     <h2>Our Independence</h2>
@@ -1384,7 +1448,7 @@
   </div>
 </div>
 
-<div id="contact" class="page" data-title="Contact Us | SMM Panel" data-description="Get in touch with the team behind SMM Panel for inquiries, research data, or scam reports." data-slug="contact">
+<div id="contact" class="page" data-title="Contact Us | SMM Panel Info" data-description="Get in touch with the team behind SMM Panel Info for inquiries, research data, or scam reports." data-slug="contact">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Information</p>
@@ -1403,7 +1467,7 @@
   </div>
 </div>
 
-<div id="terms" class="page" data-title="Terms & Disclaimer | SMM Panel" data-description="Read our terms of service and liability disclaimers regarding the educational use of SMM panel information." data-slug="terms-and-disclaimer">
+<div id="terms" class="page" data-title="Terms & Disclaimer | SMM Panel Info" data-description="Read our terms of service and liability disclaimers regarding the educational use of SMM panel information." data-slug="terms-and-disclaimer">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Legal</p>
@@ -1411,10 +1475,10 @@
   </div>
   <div class="page-body animate-up delay-3">
     <h2>Educational Purpose Only</h2>
-    <p>The content provided on SMM Panel is intended strictly for informational and educational purposes. We document and analyze the mechanics of the SMM industry; we do not encourage or endorse the violation of any third-party Terms of Service.</p>
+    <p>The content provided on SMM Panel Info is intended strictly for informational and educational purposes. We document and analyze the mechanics of the SMM industry; we do not encourage or endorse the violation of any third-party Terms of Service.</p>
     
     <h2>No Liability</h2>
-    <p>By utilizing this website, you explicitly agree that SMM Panel, its owners, and its contributors bear absolutely no liability for any consequences arising from your use of SMM panels. This includes, but is not limited to:</p>
+    <p>By utilizing this website, you explicitly agree that SMM Panel Info, its owners, and its contributors bear absolutely no liability for any consequences arising from your use of SMM panels. This includes, but is not limited to:</p>
     <ul>
       <li>Financial loss due to scams, unfulfilled orders, or cryptocurrency errors.</li>
       <li>The suspension, shadow-banning, or permanent deletion of any social media accounts on platforms such as Instagram, YouTube, TikTok, Facebook, or Telegram.</li>
@@ -1426,7 +1490,7 @@
   </div>
 </div>
 
-<div id="privacy" class="page" data-title="Privacy Policy | SMM Panel" data-description="Understand how SMM Panel handles data collection, analytics, and browser cookies." data-slug="privacy-policy">
+<div id="privacy" class="page" data-title="Privacy Policy | SMM Panel Info" data-description="Understand how SMM Panel handles data collection, analytics, and browser cookies." data-slug="privacy-policy">
   <div class="inner-nav animate-up delay-1"><a class="back-link" href="/" onclick="showPage('home')">← Home</a></div>
   <div class="page-header animate-up delay-2">
     <p class="page-num">Legal</p>
@@ -1434,7 +1498,7 @@
   </div>
   <div class="page-body animate-up delay-3">
     <h2>Data Collection</h2>
-    <p>SMM Panel is designed to respect user privacy. Because we operate as a static informational resource, we do not require user accounts, we do not process financial transactions, and we do not aggressively harvest personally identifiable information.</p>
+    <p>SMM Panel Info is designed to respect user privacy. Because we operate as a static informational resource, we do not require user accounts, we do not process financial transactions, and we do not aggressively harvest personally identifiable information.</p>
     
     <h2>Analytics &amp; Cookies</h2>
     <p>We may utilize standard, anonymized website analytics tracking (such as Google Analytics) to understand broad visitor traffic patterns and optimize our content structure. This process may place standard tracking cookies on your browser. You can disable cookies at any time via your browser settings without affecting your ability to read the content on this site.</p>
@@ -1446,8 +1510,8 @@
 
 <footer>
   <div class="footer-logo">
-    <img src="/favicon.svg" alt="SMM Panel Icon" width="32" height="32" style="object-fit: contain;">
-    SMM Panel
+    <img src="/favicon.svg" alt="SMM Panel Info Icon" width="32" height="32" style="object-fit: contain;">
+    SMM Panel Info
   </div>
   <div class="footer-nav">
     <a class="footer-link" href="/about" onclick="showPage('about')">About</a>
@@ -1455,7 +1519,7 @@
     <a class="footer-link" href="/terms-and-disclaimer" onclick="showPage('terms')">Terms &amp; Disclaimer</a>
     <a class="footer-link" href="/privacy-policy" onclick="showPage('privacy')">Privacy Policy</a>
   </div>
-  <p>© 2026 SMM Panel — All rights reserved. Independent &amp; non-commercial. Not affiliated with any SMM panel, service, or provider listed.</p>
+  <p>© 2026 SMM Panel Info — All rights reserved. Independent &amp; non-commercial. Not affiliated with any SMM panel, service, or provider listed.</p>
 </footer>
 
 <script>
@@ -1470,7 +1534,7 @@
     target.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    const title = target.getAttribute('data-title') || 'SMM Panel — Independent SMM Panel Resource';
+    const title = target.getAttribute('data-title') || 'SMM Panel Info — Independent SMM Panel Resource';
     const desc = target.getAttribute('data-description') || '';
     const slug = target.getAttribute('data-slug') || '';
 

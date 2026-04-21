@@ -1,0 +1,126 @@
+{
+  "lang_name": "中文",
+  "pages": {
+    "home": {
+      "title": "SMM Panel Info — 独立的 SMM 面板资讯",
+      "description": "免费独立的资讯平台，详解 SMM 面板如何运作、谁在使用，以及如何安全地浏览这个庞大的数字生态。"
+    },
+    "p1": {
+      "title": "什么是 SMM 面板？| SMM Panel Info",
+      "description": "了解 SMM 面板是什么、批发社交媒体营销生态如何运作，以及谁在使用这些数字增长服务。"
+    },
+    "p2": {
+      "title": "使用 SMM 面板安全吗？| SMM Panel Info",
+      "description": "了解 SMM 面板的风险，从账号封禁到支付欺诈，学会如何安全地在市场中操作。"
+    },
+    "p3": {
+      "title": "如何开启 SMM 面板业务 | SMM Panel Info",
+      "description": "分步指南：如何启动自己的 SMM 面板分销业务，购买脚本并对接批发 API 提供商。"
+    },
+    "p4": {
+      "title": "SMM 面板脚本是什么？| SMM Panel Info",
+      "description": "探索 SMM 面板脚本是什么、SaaS 与自托管的区别，以及为何脚本对自动化至关重要。"
+    },
+    "p5": {
+      "title": "SMM 面板中 Refill 的含义 | SMM Panel Info",
+      "description": "理解 SMM 营销面板生态中的 refill、保证和指标流失等概念。"
+    },
+    "p6": {
+      "title": "SMM 面板中 Drip-Feed 的含义 | SMM Panel Info",
+      "description": "了解 SMM 面板上的 drip-feed 节奏如何模拟自然增长并防止算法标记你的账号。"
+    },
+    "p7": {
+      "title": "如何在 SMM 面板充值 | SMM Panel Info",
+      "description": "介绍 SMM 面板使用的预付款钱包系统，包括加密货币、Stripe 和 PayPal 支付。"
+    },
+    "p8": {
+      "title": "使用 SMM 面板的利与弊 | SMM Panel Info",
+      "description": "诚实审视 SMM 批发定价的优势与人工互动带来的风险和伦理缺陷。"
+    },
+    "p9": {
+      "title": "最安全可信的 SMM 面板（2026 市场研究）| SMM Panel Info",
+      "description": "基于 Trustpilot 独立评价、目录排名和社区情绪，对 2026 年顶级 SMM 面板的数据分析。"
+    },
+    "p10": {
+      "title": "如何寻找和比较 SMM 面板 | SMM Panel Info",
+      "description": "使用聚合目录、论坛评论和受控 API 试单，系统化评估 SMM 面板的方法。"
+    },
+    "p11": {
+      "title": "如何避免 SMM 面板骗局 | SMM Panel Info",
+      "description": "汇总最常见的 SMM 面板 exit 骗局、钓鱼手段和充值前需警惕的信号。"
+    },
+    "p12": {
+      "title": "谁是主要的 SMM 面板提供商？| SMM Panel Info",
+      "description": "深入 SMM 行业供应链，了解 Instagram、YouTube 和 Telegram 的经验证上游提供商。"
+    },
+    "p13": {
+      "title": "哪个 SMM 面板最好？| SMM Panel Info",
+      "description": "按使用场景分类的最佳 SMM 面板，重点推荐面向代理和分销商的十大选择。"
+    },
+    "p14": {
+      "title": "SMM 面板中的子面板是什么？| SMM Panel Info",
+      "description": "了解子面板如何作为 API 连接的白牌店面，让 SMM 分销商即刻开展自己的业务。"
+    },
+    "about": {
+      "title": "关于 | SMM Panel Info",
+      "description": "了解我们的使命：揭开 SMM 行业的面纱，提供公正独立的数字增长市场研究。"
+    },
+    "contact": {
+      "title": "联系我们 | SMM Panel Info",
+      "description": "就咨询、研究数据或骗局举报与 SMM Panel Info 团队取得联系。"
+    },
+    "terms": {
+      "title": "条款与免责声明 | SMM Panel Info",
+      "description": "阅读我们关于教育性使用 SMM 面板信息的服务条款和免责声明。"
+    },
+    "privacy": {
+      "title": "隐私政策 | SMM Panel Info",
+      "description": "了解 SMM Panel Info 如何处理数据收集、统计分析和浏览器 Cookie。"
+    }
+  },
+  "strings": {
+    ">About</a>": ">关于</a>",
+    ">Contact</a>": ">联系我们</a>",
+    ">Independent Resource</span>": ">独立资讯</span>",
+    ">Terms &amp; Disclaimer</a>": ">条款与免责声明</a>",
+    ">Privacy Policy</a>": ">隐私政策</a>",
+    ">← Home</a>": ">← 首页</a>",
+    ">Related Topics</div>": ">相关主题</div>",
+    ">Topic 01</p>": ">主题 01</p>",
+    ">Topic 02</p>": ">主题 02</p>",
+    ">Topic 03</p>": ">主题 03</p>",
+    ">Topic 04</p>": ">主题 04</p>",
+    ">Topic 05</p>": ">主题 05</p>",
+    ">Topic 06</p>": ">主题 06</p>",
+    ">Topic 07</p>": ">主题 07</p>",
+    ">Topic 08</p>": ">主题 08</p>",
+    ">Topic 09</p>": ">主题 09</p>",
+    ">Topic 10</p>": ">主题 10</p>",
+    ">Topic 11</p>": ">主题 11</p>",
+    ">Topic 12</p>": ">主题 12</p>",
+    ">Topic 13</p>": ">主题 13</p>",
+    ">Topic 14</p>": ">主题 14</p>",
+    ">Information</p>": ">信息</p>",
+    ">Legal</p>": ">法律</p>",
+    "Est. 2026 &nbsp;·&nbsp; Free &nbsp;·&nbsp; Independent": "成立于 2026 &nbsp;·&nbsp; 免费 &nbsp;·&nbsp; 独立",
+    "Everything About<br>SMM Panels.": "关于<br>SMM 面板的一切。",
+    "A free, independent resource detailing how SMM panels operate, who utilizes them, and how to safely navigate this massive digital ecosystem.": "免费独立的资讯平台，详解 SMM 面板如何运作、谁在使用，以及如何安全地浏览这个庞大的数字生态。",
+    ">Demystifying the SMM Ecosystem</h2>": ">揭秘 SMM 生态</h2>",
+    "14 Core Topics &nbsp;·&nbsp; Select to explore": "14 个核心主题 &nbsp;·&nbsp; 选择以查看",
+    ">What Is an SMM Panel?</div>": ">什么是 SMM 面板？</div>",
+    ">Is It Safe to Use an SMM Panel?</div>": ">使用 SMM 面板安全吗？</div>",
+    ">How to Start an SMM Panel Business</div>": ">如何开启 SMM 面板业务</div>",
+    ">SMM Panel Script: What Is It?</div>": ">SMM 面板脚本是什么？</div>",
+    ">What Does &quot;Refill&quot; Mean?</div>": ">&quot;Refill&quot; 是什么意思？</div>",
+    ">What Does &quot;Drip-Feed&quot; Mean?</div>": ">&quot;Drip-Feed&quot; 是什么意思？</div>",
+    ">How to Add Funds in an SMM Panel</div>": ">如何在 SMM 面板充值</div>",
+    ">Pros &amp; Cons of Using an SMM Panel</div>": ">使用 SMM 面板的利与弊</div>",
+    ">Safest &amp; Most Trusted SMM Panels (2026)</div>": ">最安全可信的 SMM 面板（2026）</div>",
+    ">How to Find and Compare SMM Panels</div>": ">如何寻找和比较 SMM 面板</div>",
+    ">How to Avoid Scams</div>": ">如何避免骗局</div>",
+    ">Who Is the Main SMM Panel Provider?</div>": ">谁是主要的 SMM 面板提供商？</div>",
+    ">Which SMM Panel Is Best?</div>": ">哪个 SMM 面板最好？</div>",
+    ">What Is a Child Panel?</div>": ">什么是子面板？</div>",
+    "© 2026 SMM Panel Info — All rights reserved. Independent &amp; non-commercial. Not affiliated with any SMM panel, service, or provider listed.": "© 2026 SMM Panel Info — 保留所有权利。独立、非商业机构。不隶属于任何 SMM 面板、服务或提供商。"
+  }
+}
